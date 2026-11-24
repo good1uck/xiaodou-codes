@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="google-site-verification" content="okJxWPEeoDwxvDOCB7D6Trs1ZvjEUzvH-SkoIrpEl24" />
   <title>小豆邀请码抓码站（社区收集）</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231f4e79'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-size='16' fill='white' font-family='sans-serif'%3E%E8%B1%86%3C/text%3E%3C/svg%3E">
   <meta name="description" content="社区收集的豆包小豆邀请码，来自 X 公开分享帖。不是豆包或字节跳动官方页面。一码只能用一次。">
   <meta name="keywords" content="小豆,邀请码,豆包,小豆邀请码,豆包小豆">
   <link rel="canonical" href="https://good1uck.github.io/xiaodou-codes/">
@@ -354,30 +355,36 @@
         return `<span class="pill bad">我试过了，不能用</span>`;
       }
       const cls = STATUS_CLASS[item.status] || "warn";
-      const label = STATUS_LABEL[item.status] || item.status;
+      const label = STATUS_LABEL[item.status] || escapeHtml(item.status);
       return `<span class="pill ${cls}">${label}</span>`;
     }
 
     function escapeHtml(value) {
       return String(value)
-        .replace(/&/g, "&")
-        .replace(/</g, "<")
-        .replace(/>/g, ">")
-        .replace(/"/g, """);
+        .replace(/&/g, "\u0026amp;")
+        .replace(/</g, "\u0026lt;")
+        .replace(/>/g, "\u0026gt;")
+        .replace(/"/g, "\u0026quot;");
+    }
+
+    function safeUrl(value) {
+      const text = String(value || "");
+      if (/^https:\/\//i.test(text)) return escapeHtml(text);
+      return "";
     }
 
     function renderRows() {
       const rows = filteredCodes();
       const tbody = document.getElementById("rows");
       if (!rows.length) {
-        tbody.innerHTML = "";
+        tbody.innerHTML = "<tr><td colspan=\"7\" class=\"empty\">暂无符合筛选的邀请码</td></tr>";
         return;
       }
       tbody.innerHTML = rows.map((item) => {
         const isTried = tried.includes(item.code);
         const source = item.officialUrl
-          ? `<a href="${escapeHtml(item.postUrl)}" target="_blank" rel="noopener">@${escapeHtml(item.author)}</a> · <a href="${escapeHtml(item.officialUrl)}" target="_blank" rel="noopener">官方页</a>`
-          : `<a href="${escapeHtml(item.postUrl)}" target="_blank" rel="noopener">@${escapeHtml(item.author)}</a>`;
+          ? `<a href="${safeUrl(item.postUrl)}" target="_blank" rel="noopener">@${escapeHtml(item.author)}</a> · <a href="${safeUrl(item.officialUrl)}" target="_blank" rel="noopener">官方页</a>`
+          : `<a href="${safeUrl(item.postUrl)}" target="_blank" rel="noopener">@${escapeHtml(item.author)}</a>`;
         const expires = item.expires ? `<span class="expires">至 ${escapeHtml(item.expires)}</span>` : "";
         const copyLabel = copied === item.code ? "已复制" : "复制";
         const markLabel = isTried ? "取消标记" : "我试过了，不能用";
