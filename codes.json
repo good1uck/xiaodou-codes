@@ -1,7 +1,17 @@
 {
-  "lastUpdated": "2026-11-24 20:01 北京时间",
-  "lastSinceId": "2125197935885557923",
+  "lastUpdated": "2026-11-24 20:05 北京时间",
+  "lastSinceId": "2125199057081499959",
   "codes": [
+    {
+      "code": "DNWYWA",
+      "postId": "2125198305114382608",
+      "author": "YiYiyi126126",
+      "postUrl": "https://x.com/YiYiyi126126/status/2125198305114382608",
+      "postedAt": "2026-11-24 20:02:14 北京时间",
+      "postedAtUtc": "2026-11-24T12:02:14.000Z",
+      "replyCount": 0,
+      "status": "maybe_available"
+    },
     {
       "code": "WS1DSB",
       "postId": "2125197935524901111",
@@ -9,8 +19,8 @@
       "postUrl": "https://x.com/JiYang1482/status/2125197935524901111",
       "postedAt": "2026-11-24 20:00:46 北京时间",
       "postedAtUtc": "2026-11-24T12:00:46.000Z",
-      "replyCount": 0,
-      "status": "maybe_available"
+      "replyCount": 1,
+      "status": "maybe_used"
     },
     {
       "code": "LK2B9N",
