@@ -1,7 +1,18 @@
 {
-  "lastUpdated": "2026-11-24 17:00 北京时间",
-  "lastSinceId": "2125151607700812180",
+  "lastUpdated": "2026-11-24 17:06 北京时间",
+  "lastSinceId": "2125153113665585248",
   "codes": [
+    {
+      "code": "3T3C3L",
+      "postId": "2125153113665585248",
+      "author": "CilantrolsSoap",
+      "postUrl": "https://x.com/CilantrolsSoap/status/2125153113665585248",
+      "postedAt": "2026-11-24 17:02:40 北京时间",
+      "postedAtUtc": "2026-11-24T09:02:40.000Z",
+      "replyCount": 2,
+      "status": "maybe_used",
+      "expires": "2026-11-26 11:09"
+    },
     {
       "code": "NDHGED",
       "postId": "2125151607700812180",
@@ -9,8 +20,8 @@
       "postUrl": "https://x.com/sykern3l/status/2125151607700812180",
       "postedAt": "2026-11-24 16:56:41 北京时间",
       "postedAtUtc": "2026-11-24T08:56:41.000Z",
-      "replyCount": 0,
-      "status": "maybe_available"
+      "replyCount": 2,
+      "status": "maybe_used"
     },
     {
       "code": "6FZGJG",
