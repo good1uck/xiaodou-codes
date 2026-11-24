@@ -34,16 +34,6 @@
       "status": "maybe_available"
     },
     {
-      "code": "BEGWUM",
-      "postId": "2125167610212073577",
-      "author": "zhi_qiqng",
-      "postUrl": "https://x.com/zhi_qiqng/status/2125167610212073577",
-      "postedAt": "2026-11-24 18:00:16 北京时间",
-      "postedAtUtc": "2026-11-24T10:00:16.000Z",
-      "replyCount": 1,
-      "status": "maybe_used"
-    },
-    {
       "code": "UH7SA9",
       "postId": "2125167573172146429",
       "author": "IderSp27732",
@@ -61,7 +51,8 @@
       "postedAt": "2026-11-24 17:59:19 北京时间",
       "postedAtUtc": "2026-11-24T09:59:19.000Z",
       "replyCount": 0,
-      "status": "maybe_available"
+      "status": "maybe_available",
+      "expires": "2026-11-26 17:56"
     },
     {
       "code": "3FZVFG",
@@ -111,7 +102,8 @@
       "postedAt": "2026-11-24 17:08:08 北京时间",
       "postedAtUtc": "2026-11-24T09:08:08.000Z",
       "replyCount": 3,
-      "status": "maybe_used"
+      "status": "maybe_used",
+      "expires": "2026-11-26 16:28"
     },
     {
       "code": "3T3C3L",
@@ -154,7 +146,7 @@
       "postedAtUtc": "2026-11-24T08:31:38.000Z",
       "replyCount": 4,
       "status": "maybe_used",
-      "expires": "11/26 14:14"
+      "expires": "2026-11-26 14:14"
     },
     {
       "code": "D7QMPE",
@@ -165,7 +157,7 @@
       "postedAtUtc": "2026-11-24T08:31:38.000Z",
       "replyCount": 4,
       "status": "maybe_used",
-      "expires": "11/26 14:17"
+      "expires": "2026-11-26 14:17"
     },
     {
       "code": "QRXKRC",
@@ -176,7 +168,7 @@
       "postedAtUtc": "2026-11-24T08:31:38.000Z",
       "replyCount": 4,
       "status": "maybe_used",
-      "expires": "11/26 12:27"
+      "expires": "2026-11-26 12:27"
     },
     {
       "code": "NCRBZX",
@@ -187,7 +179,7 @@
       "postedAtUtc": "2026-11-24T08:31:38.000Z",
       "replyCount": 4,
       "status": "maybe_used",
-      "expires": "11/26 10:49"
+      "expires": "2026-11-26 10:49"
     },
     {
       "code": "ZH3ZJK",
