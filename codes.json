@@ -1,7 +1,28 @@
 {
-  "lastUpdated": "2026-11-24 20:16 北京时间",
-  "lastSinceId": "2125201767046557974",
+  "lastUpdated": "2026-11-24 20:20 北京时间",
+  "lastSinceId": "2125202833872208014",
   "codes": [
+    {
+      "code": "N2W48",
+      "postId": "2125202674324746588",
+      "author": "rongrongone",
+      "postUrl": "https://x.com/rongrongone/status/2125202674324746588",
+      "postedAt": "2026-11-24 20:19:36 北京时间",
+      "postedAtUtc": "2026-11-24T12:19:36.000Z",
+      "replyCount": 0,
+      "status": "maybe_available"
+    },
+    {
+      "code": "Y8MCTW",
+      "postId": "2125202470238580807",
+      "author": "XiaoZhi_AILab",
+      "postUrl": "https://x.com/XiaoZhi_AILab/status/2125202470238580807",
+      "postedAt": "2026-11-24 20:18:47 北京时间",
+      "postedAtUtc": "2026-11-24T12:18:47.000Z",
+      "replyCount": 0,
+      "status": "maybe_available",
+      "expires": "2026-11-26 20:15"
+    },
     {
       "code": "DNWYWA",
       "postId": "2125198305114382608",
