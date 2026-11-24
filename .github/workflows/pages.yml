@@ -27,7 +27,7 @@ jobs:
       - name: Prepare site
         run: |
           mkdir _site
-          cp index.html codes.json _site/
+          cp index.html codes.json robots.txt sitemap.xml 12fb0e8f8c287ee46be0571f729ca8df.txt _site/
           touch _site/.nojekyll
       - name: Setup Pages
         uses: actions/configure-pages@v5
