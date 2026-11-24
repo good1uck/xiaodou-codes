@@ -1,7 +1,37 @@
 {
-  "lastUpdated": "2026-11-24 22:34 北京时间",
-  "lastSinceId": "2125235698722906337",
+  "lastUpdated": "2026-11-24 22:59 北京时间",
+  "lastSinceId": "2125241949976510800",
   "codes": [
+    {
+      "code": "TODAYAI",
+      "postId": "2125241949976510800",
+      "author": "chsengni",
+      "postUrl": "https://x.com/chsengni/status/2125241949976510800",
+      "postedAt": "2026-11-24 22:55:40 北京时间",
+      "postedAtUtc": "2026-11-24T14:55:40.000Z",
+      "replyCount": 0,
+      "status": "maybe_available"
+    },
+    {
+      "code": "LOGIN",
+      "postId": "2125241949976510800",
+      "author": "chsengni",
+      "postUrl": "https://x.com/chsengni/status/2125241949976510800",
+      "postedAt": "2026-11-24 22:55:40 北京时间",
+      "postedAtUtc": "2026-11-24T14:55:40.000Z",
+      "replyCount": 0,
+      "status": "maybe_available"
+    },
+    {
+      "code": "FLASH",
+      "postId": "2125241949976510800",
+      "author": "chsengni",
+      "postUrl": "https://x.com/chsengni/status/2125241949976510800",
+      "postedAt": "2026-11-24 22:55:40 北京时间",
+      "postedAtUtc": "2026-11-24T14:55:40.000Z",
+      "replyCount": 0,
+      "status": "maybe_available"
+    },
     {
       "code": "STORE",
       "postId": "2125235698722906337",
