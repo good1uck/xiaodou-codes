@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-11-25 09:44 北京时间",
-  "lastSinceId": "2125404603273675011",
+  "lastUpdated": "2026-11-25 09:49 北京时间",
+  "lastSinceId": "2125405839095968235",
   "codes": [
     {
       "code": "TOKEN",
@@ -139,8 +139,8 @@
       "postUrl": "https://x.com/LuMaoUp/status/2125381031532560444",
       "postedAt": "2026-11-25 08:08:20 北京时间",
       "postedAtUtc": "2026-11-25T00:08:20.000Z",
-      "replyCount": 0,
-      "status": "maybe_available"
+      "replyCount": 1,
+      "status": "maybe_used"
     },
     {
       "code": "3KRVX4",
