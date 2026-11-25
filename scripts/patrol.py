@@ -54,8 +54,8 @@ OFFICIAL_CODE_RE = re.compile(
     r"activity\.doubao\.com/ug/invite-share/([A-Za-z0-9-]{4,16})",
     re.IGNORECASE,
 )
-# 5–8 位大写字母数字，或官方那种「字母-其余」形式（如 M-342WXG）
-BARE_CODE_RE = re.compile(r"(?<![A-Z0-9-])([A-Z0-9]{5,8}|[A-Z]-[A-Z0-9]{5,8})(?![A-Z0-9-])")
+# 严格 6 位大写字母数字，或官方那种「字母-6位」形式（如 M-342WXG）
+BARE_CODE_RE = re.compile(r"(?<![A-Z0-9-])([A-Z0-9]{6}|[A-Z]-[A-Z0-9]{6})(?![A-Z0-9-])")
 
 # 容易从英文单词里误抽到的码，一律丢掉
 STOPWORDS = {
@@ -66,6 +66,11 @@ STOPWORDS = {
     "UPDATED", "COMMENT", "COMMENTS", "WEBSITE", "PAGES", "CLICK", "CHECK",
     "TODAY", "TOMORROW", "OFFICIAL", "ACCOUNT", "MESSAGE", "NUMBER",
     "WINDOWS", "ANDROID", "IPHONE", "APPSTORE", "TESTCODE",
+    # 过滤常见英文词、AI产品名、链接关键词等误报
+    "TOKEN", "TOKENS", "TECHNODE", "OPENAI", "BELIKE", "CNMLGB", "INSTALL",
+    "THREADS", "PERSONAL", "BETTEROP", "BETTEROPC", "CLAUDE", "GEMINI",
+    "CHATGPT", "PROMPT", "MODELS", "ONLINE", "STORE", "FLASH", "LOGIN",
+    "AGENT", "AGENTS", "JONAS", "LINUX", "OPUS5", "KFCDD", "KSKBL",
 }
 
 # 码前后出现这些产品名就不收（BEGWUM 就是 Muse 码被误收的教训）
@@ -250,12 +255,18 @@ def extract_codes(text: str, urls: list[str] | None = None) -> list[dict[str, st
         found[code] = {"code": code, "officialUrl": official}
 
     # 2) 正文里的裸码
-    upper_text = text.upper()
+    # 剥离 URL 与网址域名，避免将链接中的路径、域名或参数误判为邀请码（如 technode.com/...）
+    clean_text = re.sub(r"https?://\S+", " ", text)
+    clean_text = re.sub(r"(?:\b[a-zA-Z0-9-]+\.)+[a-zA-Z]{2,}(?:/\S*)?", " ", clean_text)
+    upper_text = clean_text.upper()
     for match in BARE_CODE_RE.finditer(upper_text):
         code = match.group(1).upper()
-        if code in STOPWORDS:
+        core = code[2:] if code.startswith("M-") or (len(code) == 8 and code[1] == "-") else code
+        if len(core) != 6:
             continue
-        if re.fullmatch(r"\d+", code.replace("-", "")):
+        if code in STOPWORDS or core in STOPWORDS:
+            continue
+        if re.fullmatch(r"\d+", core):
             continue  # 纯数字不要
         if code in found:
             continue
@@ -743,6 +754,13 @@ def run_patrol(posts_source: str, dry_run: bool = False) -> int:
 
     message = f"chore: 巡检更新 codes.json（{new_data['lastUpdated']}）"
     update_codes_with_retry(gh_token, new_data, message)
+    local_codes = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "codes.json")
+    try:
+        with open(local_codes, "w", encoding="utf-8") as f:
+            json.dump(new_data, f, ensure_ascii=False, indent=2)
+            f.write("\n")
+    except Exception:
+        pass
     return 0
 
 
