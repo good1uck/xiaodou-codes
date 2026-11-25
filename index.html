@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="google-site-verification" content="okJxWPEeoDwxvDOCB7D6Trs1ZvjEUzvH-SkoIrpEl24" />
   <title>小豆邀请码抓码站（社区收集）</title>
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231f4e79'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-size='16' fill='white' font-family='sans-serif'%3E%E8%B1%86%3C/text%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%234f46e5'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-size='16' fill='white' font-family='sans-serif'%3E%E8%B1%86%3C/text%3E%3C/svg%3E">
   <meta name="description" content="社区收集的豆包小豆邀请码，来自 X 公开分享帖。不是豆包或字节跳动官方页面。一码只能用一次。">
   <meta name="keywords" content="小豆,邀请码,豆包,小豆邀请码,豆包小豆">
   <link rel="canonical" href="https://good1uck.github.io/xiaodou-codes/">
@@ -19,216 +19,566 @@
   <meta name="twitter:description" content="社区收集的豆包小豆邀请码，来自 X 公开分享帖。不是豆包或字节跳动官方页面。一码只能用一次。">
   <style>
     :root {
-      --bg: #f6f4ef;
-      --paper: #fffcf7;
-      --ink: #1c1915;
-      --muted: #5c564c;
-      --line: #e4ddd2;
-      --accent: #1f4e79;
-      --ok: #1c6b3a;
-      --ok-bg: #e5f5ea;
-      --warn: #8a5a00;
-      --warn-bg: #fff1d6;
-      --bad: #9b1c1c;
-      --bad-bg: #fde8e8;
-      --btn: #1f4e79;
-      --btn-ink: #fff;
-      --shadow: 0 1px 2px rgba(28, 25, 21, 0.06);
+      --bg: #f0f2f5;
+      --surface: #ffffff;
+      --ink: #1a1a2e;
+      --muted: #6b7280;
+      --subtle: #9ca3af;
+      --border: #e5e7eb;
+      --primary: #4f46e5;
+      --primary-light: #eef2ff;
+      --primary-dark: #3730a3;
+      --success: #059669;
+      --success-light: #ecfdf5;
+      --success-dark: #047857;
+      --warn: #d97706;
+      --warn-light: #fffbeb;
+      --warn-dark: #b45309;
+      --danger: #dc2626;
+      --danger-light: #fef2f2;
+      --hero-from: #4f46e5;
+      --hero-to: #7c3aed;
+      --hero-ink: #ffffff;
+      --hero-muted: rgba(255,255,255,0.75);
+      --card-hover: #f9fafb;
+      --radius: 16px;
+      --radius-sm: 10px;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+      --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
+      --shadow-lg: 0 10px 30px rgba(0,0,0,0.1);
+      --transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
     }
     @media (prefers-color-scheme: dark) {
       :root {
-        --bg: #161411;
-        --paper: #201c18;
-        --ink: #f3efe7;
-        --muted: #b2aaa0;
-        --line: #3a342c;
-        --accent: #8cb4d9;
-        --ok: #8fd9a8;
-        --ok-bg: #1a3a26;
-        --warn: #efc36b;
-        --warn-bg: #3a2d12;
-        --bad: #f0a0a0;
-        --bad-bg: #3a1a1a;
-        --btn: #8cb4d9;
-        --btn-ink: #161411;
-        --shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+        --bg: #0f1117;
+        --surface: #1a1d2e;
+        --ink: #e8eaed;
+        --muted: #9ca3af;
+        --subtle: #6b7280;
+        --border: #2d3348;
+        --primary: #818cf8;
+        --primary-light: #1e1b4b;
+        --primary-dark: #a5b4fc;
+        --success: #34d399;
+        --success-light: #064e3b;
+        --success-dark: #6ee7b7;
+        --warn: #fbbf24;
+        --warn-light: #451a03;
+        --warn-dark: #fcd34d;
+        --danger: #f87171;
+        --danger-light: #450a0a;
+        --hero-from: #3730a3;
+        --hero-to: #5b21b6;
+        --hero-ink: #f0f0ff;
+        --hero-muted: rgba(255,255,255,0.6);
+        --card-hover: #222640;
+        --shadow-sm: 0 1px 3px rgba(0,0,0,0.3);
+        --shadow-md: 0 4px 12px rgba(0,0,0,0.4);
+        --shadow-lg: 0 10px 30px rgba(0,0,0,0.5);
       }
     }
-    * { box-sizing: border-box; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
     body {
-      margin: 0;
       color: var(--ink);
       background: var(--bg);
-      font: 16px/1.6 system-ui, -apple-system, "Segoe UI", "PingFang SC", "Noto Sans SC", "Microsoft YaHei", sans-serif;
+      font: 15px/1.6 system-ui, -apple-system, "Segoe UI", "PingFang SC", "Noto Sans SC", "Microsoft YaHei", sans-serif;
+      -webkit-font-smoothing: antialiased;
     }
-    main {
-      max-width: 1120px;
-      margin: 0 auto;
-      padding: 32px 20px 64px;
+
+    /* ===== Hero ===== */
+    .hero {
+      background: linear-gradient(135deg, var(--hero-from), var(--hero-to));
+      color: var(--hero-ink);
+      padding: 48px 20px 56px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
     }
-    h1 { font-size: 1.75rem; letter-spacing: -0.02em; margin: 0 0 8px; }
-    h2 { font-size: 1.2rem; margin: 0 0 12px; }
-    p { margin: 0 0 12px; }
-    .lede { color: var(--muted); max-width: 46rem; }
-    .meta {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 10px 24px;
-      background: var(--paper);
-      border: 1px solid var(--line);
-      border-radius: 12px;
-      padding: 16px 18px;
-      margin: 20px 0;
-      box-shadow: var(--shadow);
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 20% 50%, rgba(255,255,255,0.08) 0%, transparent 50%),
+                  radial-gradient(circle at 80% 20%, rgba(255,255,255,0.05) 0%, transparent 40%);
+      pointer-events: none;
     }
-    .meta dt { color: var(--muted); font-size: 0.8rem; }
-    .meta dd { margin: 0; font-weight: 600; }
-    .callout {
-      border: 1px solid var(--line);
-      border-radius: 12px;
-      padding: 14px 16px;
-      margin: 16px 0 28px;
-      background: var(--paper);
+    .hero-inner { max-width: 640px; margin: 0 auto; position: relative; }
+    .hero .logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 16px;
     }
-    .callout.warn { background: var(--warn-bg); border-color: transparent; }
-    .callout strong { display: block; margin-bottom: 4px; }
-    .toolbar {
+    .hero .logo-icon {
+      width: 48px; height: 48px;
+      background: rgba(255,255,255,0.2);
+      border-radius: 14px;
       display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin: 0 0 14px;
+      align-items: center;
+      justify-content: center;
+      font-size: 26px;
+      backdrop-filter: blur(8px);
     }
-    .toolbar button {
-      appearance: none;
-      border: 1px solid var(--line);
-      background: var(--paper);
-      color: var(--ink);
-      border-radius: 999px;
-      padding: 6px 12px;
-      cursor: pointer;
-      font: inherit;
+    .hero h1 {
+      font-size: 2rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      margin: 0 0 10px;
+      line-height: 1.2;
     }
-    .toolbar button[aria-pressed="true"] {
-      background: var(--btn);
-      color: var(--btn-ink);
-      border-color: transparent;
+    .hero .tagline {
+      color: var(--hero-muted);
+      font-size: 1rem;
+      max-width: 420px;
+      margin: 0 auto;
+      line-height: 1.6;
     }
-    .hint { color: var(--muted); font-size: 0.9rem; margin-bottom: 12px; }
-    .table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 12px; background: var(--paper); }
-    table { width: 100%; border-collapse: collapse; min-width: 780px; }
-    th, td { padding: 10px 12px; text-align: left; border-bottom: 1px solid var(--line); vertical-align: middle; }
-    th { font-size: 0.8rem; color: var(--muted); font-weight: 600; }
-    tr:last-child td { border-bottom: 0; }
-    td.replies { text-align: right; font-variant-numeric: tabular-nums; }
-    code {
-      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-      font-size: 0.95em;
+
+    /* ===== Stats Bar ===== */
+    .stats-bar {
+      max-width: 960px;
+      margin: -32px auto 0;
+      padding: 0 16px;
+      position: relative;
+      z-index: 2;
     }
-    .expires { color: var(--muted); font-size: 0.8rem; margin-left: 6px; }
-    .pill {
-      display: inline-block;
-      border-radius: 999px;
-      padding: 2px 8px;
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 1px;
+      background: var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+    }
+    .stat {
+      background: var(--surface);
+      padding: 20px 16px;
+      text-align: center;
+    }
+    .stat-value {
+      font-size: 1.75rem;
+      font-weight: 800;
+      font-variant-numeric: tabular-nums;
+      line-height: 1.2;
+    }
+    .stat-value.primary { color: var(--primary); }
+    .stat-value.success { color: var(--success); }
+    .stat-value.warn { color: var(--warn); }
+    .stat-label {
       font-size: 0.8rem;
-      font-weight: 600;
+      color: var(--muted);
+      margin-top: 4px;
     }
-    .pill.ok { background: var(--ok-bg); color: var(--ok); }
-    .pill.warn { background: var(--warn-bg); color: var(--warn); }
-    .pill.bad { background: var(--bad-bg); color: var(--bad); }
-    .actions { display: flex; flex-wrap: wrap; gap: 6px; }
-    .btn {
+
+    /* ===== Container ===== */
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 24px 16px;
+    }
+
+    /* ===== Filter Chips ===== */
+    .filter-section {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+    .filter-label {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--muted);
+      margin-right: 4px;
+    }
+    .chip {
       appearance: none;
-      border: 0;
-      border-radius: 8px;
-      padding: 6px 10px;
+      border: 1.5px solid var(--border);
+      background: var(--surface);
+      color: var(--muted);
+      border-radius: 999px;
+      padding: 7px 14px;
       cursor: pointer;
       font: inherit;
       font-size: 0.85rem;
-      background: var(--btn);
-      color: var(--btn-ink);
+      font-weight: 500;
+      transition: all var(--transition);
+      white-space: nowrap;
     }
-    .btn.quiet {
-      background: transparent;
+    .chip:hover { border-color: var(--primary); color: var(--ink); }
+    .chip[aria-pressed="true"] {
+      background: var(--primary);
+      color: #fff;
+      border-color: transparent;
+      box-shadow: 0 2px 8px rgba(79,70,229,0.3);
+    }
+    @media (prefers-color-scheme: dark) {
+      .chip[aria-pressed="true"] { box-shadow: 0 2px 8px rgba(129,140,248,0.3); }
+    }
+
+    /* ===== Code Cards ===== */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 14px;
+    }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 18px 20px;
+      transition: all var(--transition);
+      position: relative;
+      overflow: hidden;
+    }
+    .card:hover {
+      border-color: var(--primary);
+      box-shadow: var(--shadow-md);
+      transform: translateY(-1px);
+    }
+    .card.available {
+      border-left: 4px solid var(--success);
+    }
+    .card.used {
+      opacity: 0.7;
+    }
+    .card.used:hover { opacity: 0.9; }
+    .card.tried-card {
+      opacity: 0.5;
+      border-left: 4px solid var(--danger);
+    }
+    .card-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+    .code-text {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 1.35rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
       color: var(--ink);
-      border: 1px solid var(--line);
     }
-    a { color: var(--accent); }
-    ol.steps { padding-left: 1.2rem; }
-    ol.steps li { margin: 0 0 8px; }
-    .empty { color: var(--muted); padding: 16px 0; }
-    footer { margin-top: 36px; color: var(--muted); font-size: 0.85rem; }
+    .card.available .code-text { color: var(--success-dark); }
+    @media (prefers-color-scheme: dark) {
+      .card.available .code-text { color: var(--success); }
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      border-radius: 999px;
+      padding: 3px 10px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .badge.ok { background: var(--success-light); color: var(--success); }
+    .badge.warn { background: var(--warn-light); color: var(--warn); }
+    .badge.bad { background: var(--danger-light); color: var(--danger); }
+    .badge-dot {
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: currentColor;
+    }
+    .badge.ok .badge-dot { animation: pulse 2s ease-in-out infinite; }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+    .card-meta {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      flex-wrap: wrap;
+      font-size: 0.82rem;
+      color: var(--muted);
+      margin-bottom: 12px;
+    }
+    .card-meta a { color: var(--primary); text-decoration: none; }
+    .card-meta a:hover { text-decoration: underline; }
+    .card-meta .sep { color: var(--border); }
+    .meta-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .meta-icon {
+      width: 14px; height: 14px;
+      flex-shrink: 0;
+      opacity: 0.5;
+    }
+    .card-expires {
+      font-size: 0.78rem;
+      color: var(--warn);
+      margin-bottom: 12px;
+    }
+    .card-actions {
+      display: flex;
+      gap: 8px;
+    }
+    .btn-copy {
+      flex: 1;
+      appearance: none;
+      border: 0;
+      border-radius: var(--radius-sm);
+      padding: 10px 16px;
+      cursor: pointer;
+      font: inherit;
+      font-size: 0.9rem;
+      font-weight: 600;
+      background: var(--primary);
+      color: #fff;
+      transition: all var(--transition);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+    .btn-copy:hover { background: var(--primary-dark); transform: scale(1.02); }
+    .btn-copy:active { transform: scale(0.98); }
+    .btn-copy.copied {
+      background: var(--success);
+    }
+    .card.used .btn-copy, .card.tried-card .btn-copy {
+      background: var(--border);
+      color: var(--muted);
+    }
+    .btn-mark {
+      appearance: none;
+      border: 1.5px solid var(--border);
+      background: transparent;
+      color: var(--muted);
+      border-radius: var(--radius-sm);
+      padding: 10px 12px;
+      cursor: pointer;
+      font: inherit;
+      font-size: 0.82rem;
+      transition: all var(--transition);
+      white-space: nowrap;
+    }
+    .btn-mark:hover { border-color: var(--danger); color: var(--danger); }
+    .btn-mark.is-tried { border-color: var(--danger); color: var(--danger); background: var(--danger-light); }
+
+    /* ===== Sections ===== */
+    .section-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      margin-top: 24px;
+    }
+    .section-card h2 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .section-card p, .section-card li {
+      color: var(--muted);
+      font-size: 0.9rem;
+      line-height: 1.7;
+    }
+    .section-card ol {
+      padding-left: 1.2rem;
+      margin: 8px 0;
+    }
+    .section-card li { margin-bottom: 6px; }
+    .section-card li strong { color: var(--ink); }
+    .alert-warn {
+      background: var(--warn-light);
+      border: 1px solid rgba(217,119,6,0.2);
+      border-radius: var(--radius-sm);
+      padding: 14px 16px;
+      margin-top: 14px;
+    }
+    .alert-warn strong {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--warn);
+      margin-bottom: 4px;
+    }
+    .alert-warn p { margin: 0; }
+
+    /* ===== Empty & Loading ===== */
+    .empty-state {
+      text-align: center;
+      padding: 48px 20px;
+      color: var(--muted);
+    }
+    .empty-icon { font-size: 2.5rem; margin-bottom: 12px; }
+    .loading-shimmer {
+      background: linear-gradient(90deg, var(--border) 25%, var(--surface) 50%, var(--border) 75%);
+      background-size: 200% 100%;
+      animation: shimmer 1.5s infinite;
+      border-radius: var(--radius);
+      height: 180px;
+    }
+    @keyframes shimmer {
+      0% { background-position: 200% 0; }
+      100% { background-position: -200% 0; }
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      text-align: center;
+      padding: 32px 20px 40px;
+      color: var(--subtle);
+      font-size: 0.82rem;
+    }
+    footer a { color: var(--muted); }
+    .visit-stats {
+      margin-top: 8px;
+      font-size: 0.78rem;
+    }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 640px) {
+      .hero { padding: 36px 16px 44px; }
+      .hero h1 { font-size: 1.6rem; }
+      .stats-bar { margin-top: -24px; }
+      .stat { padding: 14px 10px; }
+      .stat-value { font-size: 1.4rem; }
+      .cards { grid-template-columns: 1fr; gap: 10px; }
+      .card { padding: 16px; }
+      .code-text { font-size: 1.2rem; }
+      .section-card { padding: 18px; }
+    }
+
+    /* ===== Scroll-to-top ===== */
+    .scroll-top {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--primary);
+      color: #fff;
+      border: 0;
+      cursor: pointer;
+      font-size: 1.2rem;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      box-shadow: var(--shadow-md);
+      transition: all var(--transition);
+      z-index: 50;
+    }
+    .scroll-top:hover { transform: scale(1.1); }
+    .scroll-top.show { display: flex; }
+
+    /* ===== Toast ===== */
+    .toast {
+      position: fixed;
+      bottom: 80px;
+      left: 50%;
+      transform: translateX(-50%) translateY(20px);
+      background: var(--ink);
+      color: var(--bg);
+      padding: 10px 20px;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      opacity: 0;
+      transition: all 0.3s ease;
+      z-index: 100;
+      pointer-events: none;
+      white-space: nowrap;
+    }
+    .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
   </style>
 </head>
 <body>
-  <main>
-    <h1>小豆邀请码抓码站</h1>
-    <p class="lede">社区收集的豆包小豆邀请码，来自 X 上的公开分享帖。这不是豆包或字节跳动的官方页面。一码只能用一次，请尽快尝试并核对原帖。</p>
 
-    <dl class="meta">
-      <div>
-        <dt>最后更新</dt>
-        <dd id="last-updated">正在载入…</dd>
+  <!-- Hero -->
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="logo">
+        <div class="logo-icon">🫘</div>
       </div>
-      <div>
-        <dt>巡检</dt>
-        <dd>数据每 5 分钟写入一次，本页每 60 秒自动重新拉取</dd>
-      </div>
-      <div>
-        <dt>当前收录</dt>
-        <dd id="summary">—</dd>
-      </div>
-    </dl>
+      <h1>小豆邀请码抓码站</h1>
+      <p class="tagline">社区收集的豆包小豆邀请码，来自 X 公开分享帖<br>每 5 分钟自动巡检 · 本页每分钟自动刷新</p>
+    </div>
+  </header>
 
-    <div class="callout">
-      <strong>社区收集，非官方</strong>
-      本页由社区整理，不是豆包或字节跳动官方站点。邀请码来自公开的 X 帖子，状态按回复数和后续确认帖判断，不保证当前仍可用。一个码只能用一次。
+  <!-- Stats -->
+  <div class="stats-bar">
+    <div class="stats-grid">
+      <div class="stat">
+        <div class="stat-value primary" id="stat-total">—</div>
+        <div class="stat-label">收录总数</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value success" id="stat-available">—</div>
+        <div class="stat-label">可能可用</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value warn" id="stat-used">—</div>
+        <div class="stat-label">可能已用</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value" id="stat-updated" style="font-size:0.95rem;font-weight:600">—</div>
+        <div class="stat-label">最后更新</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <!-- Filters -->
+    <div class="filter-section" id="filters" role="tablist" aria-label="按状态筛选">
+      <span class="filter-label">筛选</span>
     </div>
 
-    <section>
-      <h2>邀请码</h2>
-      <p class="hint">新码在上。有效期按原帖原文，未单独标注时区时按北京时间理解。「我试过了，不能用」只保存在你这台设备的浏览器里，不会改写巡检状态。</p>
-      <div class="toolbar" id="filters" role="tablist" aria-label="按状态筛选"></div>
-      <div class="table-wrap">
-        <table>
-          <thead>
-            <tr>
-              <th>邀请码</th>
-              <th>复制</th>
-              <th>来源帖</th>
-              <th>发帖时间</th>
-              <th>回复</th>
-              <th>状态</th>
-              <th>本地标记</th>
-            </tr>
-          </thead>
-          <tbody id="rows"></tbody>
-        </table>
-      </div>
-      <p class="hint" id="table-note">一码只能用一次。复制后请尽快在小豆 App 里使用；如果不能用，可以在本行标记「我试过了，不能用」。</p>
-    </section>
+    <!-- Cards Grid -->
+    <div class="cards" id="cards">
+      <div class="loading-shimmer"></div>
+      <div class="loading-shimmer"></div>
+      <div class="loading-shimmer"></div>
+    </div>
 
-    <section>
-      <h2>不用邀请码的路径</h2>
+    <!-- Info Section -->
+    <div class="section-card">
+      <h2>💡 不用邀请码的路径</h2>
       <p>有人说豆包老号有机会免排队。App Store 搜「小豆 豆包旗下」可以找到小豆 App。</p>
-      <ol class="steps">
+      <ol>
         <li><strong>打开豆包 App</strong>：用已有的豆包老账号登录。</li>
         <li><strong>点头像进设置</strong>：从个人页进入设置。</li>
-        <li><strong>找「邀请好友体验小豆」</strong>：若入口还在，可以尝试直接邀请，无需另外的邀请码。</li>
+        <li><strong>找「邀请好友体验小豆」</strong>：若入口还在，可尝试直接邀请。</li>
       </ol>
-      <div class="callout warn">
-        <strong>别付钱买码</strong>
-        闲鱼等平台已有人反映买码被骗。还有卖家要求先付押金、激活后把系统里新生成的码返还再转卖的套路。请勿付钱购买邀请码。
+      <div class="alert-warn">
+        <strong>⚠️ 别付钱买码</strong>
+        <p>闲鱼等平台已有人反映买码被骗。还有卖家要求先付押金、激活后把系统里新生成的码返还再转卖的套路。请勿付钱购买邀请码。</p>
       </div>
-    </section>
+    </div>
 
-    <footer>
-      本站托管在 GitHub Pages，数据来自公开帖子的社区整理，与豆包、字节跳动无关。
-      <div class="hint" style="margin:8px 0 0">
-        <span id="busuanzi_container_site_pv">本站访问 <span id="busuanzi_value_site_pv"></span> 次</span>
-        <span id="busuanzi_container_site_uv"> / <span id="busuanzi_value_site_uv"></span> 人</span>
-      </div>
-    </footer>
-  </main>
+    <!-- Disclaimer -->
+    <div class="section-card">
+      <h2>📋 说明</h2>
+      <p>本站非官方，与豆包、字节跳动无关。数据来自 X 公开帖子的社区整理。<strong>一码只能用一次</strong>，请尽快尝试并核对原帖。「我试过了，不能用」标记仅保存在您本地浏览器中，不会改写巡检状态。</p>
+    </div>
+  </div>
+
+  <footer>
+    本站托管在 GitHub Pages，数据来自公开帖子的社区整理，与豆包、字节跳动无关。
+    <div class="visit-stats">
+      <span id="busuanzi_container_site_pv">访问 <span id="busuanzi_value_site_pv"></span> 次</span>
+      <span id="busuanzi_container_site_uv"> / <span id="busuanzi_value_site_uv"></span> 人</span>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scrollTop" aria-label="回到顶部">↑</button>
+  <div class="toast" id="toast"></div>
+
   <script>
     const DATA_URL = "codes.json";
     const TRIED_KEY = "xiaodou-invite-codes-tried";
@@ -237,177 +587,199 @@
       maybe_used: "可能已用",
       confirmed_used: "已确认被用",
     };
-    const STATUS_CLASS = {
-      maybe_available: "ok",
-      maybe_used: "warn",
-      confirmed_used: "bad",
-    };
 
     let payload = { lastUpdated: "", codes: [] };
     let filter = "all";
-    let copied = null;
+    let copiedCode = null;
+    let copiedTimer = null;
 
+    // --- localStorage helpers ---
     function loadTried() {
       try {
         const raw = localStorage.getItem(TRIED_KEY);
         if (!raw) return [];
         const parsed = JSON.parse(raw);
-        if (Array.isArray(parsed) && parsed.every((item) => typeof item === "string")) {
-          return parsed;
-        }
-      } catch (err) {}
-      return [];
+        return Array.isArray(parsed) ? parsed.filter(x => typeof x === "string") : [];
+      } catch { return []; }
     }
-
-    function saveTried(codes) {
-      try {
-        localStorage.setItem(TRIED_KEY, JSON.stringify(codes));
-      } catch (err) {}
+    function saveTried(list) {
+      try { localStorage.setItem(TRIED_KEY, JSON.stringify(list)); } catch {}
     }
-
     let tried = loadTried();
 
     function toggleTried(code) {
-      tried = tried.includes(code) ? tried.filter((item) => item !== code) : tried.concat(code);
+      tried = tried.includes(code) ? tried.filter(x => x !== code) : [...tried, code];
       saveTried(tried);
       render();
     }
 
+    // --- Toast ---
+    function showToast(text) {
+      const el = document.getElementById("toast");
+      el.textContent = text;
+      el.classList.add("show");
+      setTimeout(() => el.classList.remove("show"), 1800);
+    }
+
+    // --- Copy ---
     async function copyCode(code) {
       try {
         await navigator.clipboard.writeText(code);
-        copied = code;
+        copiedCode = code;
+        clearTimeout(copiedTimer);
+        copiedTimer = setTimeout(() => { copiedCode = null; render(); }, 1800);
+        showToast(`已复制 ${code}`);
         render();
-        setTimeout(() => {
-          if (copied === code) {
-            copied = null;
-            render();
-          }
-        }, 1500);
-      } catch (err) {}
+      } catch {}
     }
 
+    // --- Filtering ---
     function filteredCodes() {
       const codes = payload.codes || [];
       if (filter === "all") return codes;
-      if (filter === "tried") return codes.filter((item) => tried.includes(item.code));
-      return codes.filter((item) => item.status === filter);
+      if (filter === "tried") return codes.filter(c => tried.includes(c.code));
+      return codes.filter(c => c.status === filter);
     }
 
     function counts() {
       const codes = payload.codes || [];
       return {
         all: codes.length,
-        maybe_available: codes.filter((item) => item.status === "maybe_available").length,
-        maybe_used: codes.filter((item) => item.status === "maybe_used").length,
-        confirmed_used: codes.filter((item) => item.status === "confirmed_used").length,
-        tried: codes.filter((item) => tried.includes(item.code)).length,
+        maybe_available: codes.filter(c => c.status === "maybe_available").length,
+        maybe_used: codes.filter(c => c.status === "maybe_used").length,
+        confirmed_used: codes.filter(c => c.status === "confirmed_used").length,
+        tried: codes.filter(c => tried.includes(c.code)).length,
       };
+    }
+
+    // --- Escape ---
+    function esc(v) {
+      return String(v).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
+    }
+    function safeUrl(v) {
+      const s = String(v || "");
+      return /^https:\/\//i.test(s) ? esc(s) : "";
+    }
+
+    // --- Render ---
+    function renderStats() {
+      const c = counts();
+      document.getElementById("stat-total").textContent = c.all;
+      document.getElementById("stat-available").textContent = c.maybe_available;
+      document.getElementById("stat-used").textContent = c.maybe_used + c.confirmed_used;
+      document.getElementById("stat-updated").textContent = payload.lastUpdated || "—";
     }
 
     function renderFilters() {
       const c = counts();
       const options = [
         ["all", "全部", c.all],
-        ["maybe_available", "可能可用", c.maybe_available],
-        ["maybe_used", "可能已用", c.maybe_used],
-        ["confirmed_used", "已确认被用", c.confirmed_used],
-        ["tried", "我试过了", c.tried],
+        ["maybe_available", "🟢 可能可用", c.maybe_available],
+        ["maybe_used", "🟡 可能已用", c.maybe_used],
+        ["confirmed_used", "🔴 已确认被用", c.confirmed_used],
+        ["tried", "🚫 我试过", c.tried],
       ];
-      document.getElementById("filters").innerHTML = options.map(([value, label, count]) => {
-        const pressed = filter === value ? "true" : "false";
-        return `<button type="button" data-filter="${value}" aria-pressed="${pressed}">${label} ${count}</button>`;
+      const chips = options.map(([val, label, cnt]) => {
+        const pressed = filter === val ? "true" : "false";
+        return `<button type="button" class="chip" data-filter="${val}" aria-pressed="${pressed}">${label} ${cnt}</button>`;
       }).join("");
+      document.getElementById("filters").innerHTML = `<span class="filter-label">筛选</span>${chips}`;
     }
 
-    function statusPill(item) {
+    function badgeHtml(item) {
       if (tried.includes(item.code)) {
-        return `<span class="pill bad">我试过了，不能用</span>`;
+        return `<span class="badge bad"><span class="badge-dot"></span>不能用</span>`;
       }
-      const cls = STATUS_CLASS[item.status] || "warn";
-      const label = STATUS_LABEL[item.status] || escapeHtml(item.status);
-      return `<span class="pill ${cls}">${label}</span>`;
+      const map = { maybe_available: "ok", maybe_used: "warn", confirmed_used: "bad" };
+      const cls = map[item.status] || "warn";
+      const label = STATUS_LABEL[item.status] || esc(item.status);
+      return `<span class="badge ${cls}"><span class="badge-dot"></span>${label}</span>`;
     }
 
-    function escapeHtml(value) {
-      return String(value)
-        .replace(/&/g, "\u0026amp;")
-        .replace(/</g, "\u0026lt;")
-        .replace(/>/g, "\u0026gt;")
-        .replace(/"/g, "\u0026quot;");
+    function cardClass(item) {
+      if (tried.includes(item.code)) return "card tried-card";
+      if (item.status === "maybe_available") return "card available";
+      return "card used";
     }
 
-    function safeUrl(value) {
-      const text = String(value || "");
-      if (/^https:\/\//i.test(text)) return escapeHtml(text);
-      return "";
-    }
-
-    function renderRows() {
+    function renderCards() {
       const rows = filteredCodes();
-      const tbody = document.getElementById("rows");
+      const grid = document.getElementById("cards");
       if (!rows.length) {
-        tbody.innerHTML = "<tr><td colspan=\"7\" class=\"empty\">暂无符合筛选的邀请码</td></tr>";
+        grid.innerHTML = `<div class="empty-state" style="grid-column:1/-1"><div class="empty-icon">🔍</div><p>暂无符合筛选条件的邀请码</p></div>`;
         return;
       }
-      tbody.innerHTML = rows.map((item) => {
+      grid.innerHTML = rows.map(item => {
         const isTried = tried.includes(item.code);
-        const source = item.officialUrl
-          ? `<a href="${safeUrl(item.postUrl)}" target="_blank" rel="noopener">@${escapeHtml(item.author)}</a> · <a href="${safeUrl(item.officialUrl)}" target="_blank" rel="noopener">官方页</a>`
-          : `<a href="${safeUrl(item.postUrl)}" target="_blank" rel="noopener">@${escapeHtml(item.author)}</a>`;
-        const expires = item.expires ? `<span class="expires">至 ${escapeHtml(item.expires)}</span>` : "";
-        const copyLabel = copied === item.code ? "已复制" : "复制";
-        const markLabel = isTried ? "取消标记" : "我试过了，不能用";
-        return `<tr>
-          <td><code>${escapeHtml(item.code)}</code>${expires}</td>
-          <td><button type="button" class="btn" data-copy="${escapeHtml(item.code)}">${copyLabel}</button></td>
-          <td>${source}</td>
-          <td>${escapeHtml(item.postedAt)}</td>
-          <td class="replies">${escapeHtml(item.replyCount)}</td>
-          <td>${statusPill(item)}</td>
-          <td><button type="button" class="btn quiet" data-tried="${escapeHtml(item.code)}">${markLabel}</button></td>
-        </tr>`;
+        const isCopied = copiedCode === item.code;
+        const copyLabel = isCopied ? "✓ 已复制" : "复制邀请码";
+        const copiedClass = isCopied ? " copied" : "";
+        const markLabel = isTried ? "取消标记" : "✕ 不能用";
+        const markClass = isTried ? " is-tried" : "";
+        const expires = item.expires ? `<div class="card-expires">⏰ 有效期至 ${esc(item.expires)}</div>` : "";
+        const official = item.officialUrl ? ` <span class="sep">·</span> <a href="${safeUrl(item.officialUrl)}" target="_blank" rel="noopener">官方页</a>` : "";
+        const postLink = item.postUrl ? `<a href="${safeUrl(item.postUrl)}" target="_blank" rel="noopener">@${esc(item.author)}</a>` : esc(item.author || "—");
+
+        return `<div class="${cardClass(item)}">
+          <div class="card-header">
+            <span class="code-text">${esc(item.code)}</span>
+            ${badgeHtml(item)}
+          </div>
+          <div class="card-meta">
+            <span class="meta-item">${postLink}${official}</span>
+            <span class="meta-item">${esc(item.postedAt)}</span>
+            <span class="meta-item">💬 ${esc(item.replyCount)} 回复</span>
+          </div>
+          ${expires}
+          <div class="card-actions">
+            <button type="button" class="btn-copy${copiedClass}" data-copy="${esc(item.code)}">${copyLabel}</button>
+            <button type="button" class="btn-mark${markClass}" data-tried="${esc(item.code)}">${markLabel}</button>
+          </div>
+        </div>`;
       }).join("");
     }
 
     function render() {
-      document.getElementById("last-updated").textContent = payload.lastUpdated || "—";
-      const c = counts();
-      document.getElementById("summary").textContent = c.all + " 个码，其中可能可用 " + c.maybe_available + " 个";
+      renderStats();
       renderFilters();
-      renderRows();
+      renderCards();
     }
 
+    // --- Data ---
     async function loadData() {
-      const response = await fetch(DATA_URL + "?t=" + Date.now(), { cache: "no-store" });
-      if (!response.ok) throw new Error("HTTP " + response.status);
-      payload = await response.json();
+      const r = await fetch(DATA_URL + "?t=" + Date.now(), { cache: "no-store" });
+      if (!r.ok) throw new Error("HTTP " + r.status);
+      payload = await r.json();
       render();
     }
 
-    document.getElementById("filters").addEventListener("click", (event) => {
-      const button = event.target.closest("button[data-filter]");
-      if (!button) return;
-      filter = button.getAttribute("data-filter");
+    // --- Events ---
+    document.getElementById("filters").addEventListener("click", e => {
+      const btn = e.target.closest("button[data-filter]");
+      if (!btn) return;
+      filter = btn.getAttribute("data-filter");
       render();
     });
 
-    document.getElementById("rows").addEventListener("click", (event) => {
-      const copyBtn = event.target.closest("button[data-copy]");
-      if (copyBtn) {
-        copyCode(copyBtn.getAttribute("data-copy"));
-        return;
-      }
-      const triedBtn = event.target.closest("button[data-tried]");
+    document.getElementById("cards").addEventListener("click", e => {
+      const copyBtn = e.target.closest("button[data-copy]");
+      if (copyBtn) { copyCode(copyBtn.getAttribute("data-copy")); return; }
+      const triedBtn = e.target.closest("button[data-tried]");
       if (triedBtn) toggleTried(triedBtn.getAttribute("data-tried"));
     });
 
+    // Scroll-to-top
+    const scrollBtn = document.getElementById("scrollTop");
+    window.addEventListener("scroll", () => {
+      scrollBtn.classList.toggle("show", window.scrollY > 400);
+    }, { passive: true });
+    scrollBtn.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+
+    // Init
     loadData().catch(() => {
-      document.getElementById("last-updated").textContent = "数据载入失败，请稍后刷新";
+      document.getElementById("stat-updated").textContent = "载入失败";
     });
-    setInterval(() => {
-      loadData().catch(() => {});
-    }, 60000);
+    setInterval(() => loadData().catch(() => {}), 60000);
   </script>
   <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 </body>
