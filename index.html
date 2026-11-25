@@ -19,62 +19,66 @@
   <meta name="twitter:description" content="社区收集的豆包小豆邀请码，来自 X 公开分享帖。不是豆包或字节跳动官方页面。一码只能用一次。">
   <style>
     :root {
-      --bg: #f0f2f5;
+      --bg: #f5f5f7;
       --surface: #ffffff;
-      --ink: #1a1a2e;
-      --muted: #6b7280;
-      --subtle: #9ca3af;
-      --border: #e5e7eb;
-      --primary: #4f46e5;
-      --primary-light: #eef2ff;
-      --primary-dark: #3730a3;
-      --success: #059669;
-      --success-light: #ecfdf5;
-      --success-dark: #047857;
-      --warn: #d97706;
-      --warn-light: #fffbeb;
-      --warn-dark: #b45309;
-      --danger: #dc2626;
-      --danger-light: #fef2f2;
-      --hero-from: #4f46e5;
-      --hero-to: #7c3aed;
-      --hero-ink: #ffffff;
-      --hero-muted: rgba(255,255,255,0.75);
-      --card-hover: #f9fafb;
-      --radius: 16px;
+      --ink: #1d1d1f;
+      --muted: #6e6e73;
+      --subtle: #aeaeb2;
+      --border: #e5e5ea;
+      --primary: #5856d6;
+      --primary-soft: rgba(88,86,214,0.1);
+      --primary-dark: #3634a3;
+      --success: #34c759;
+      --success-soft: rgba(52,199,89,0.1);
+      --success-dark: #248a3d;
+      --warn: #ff9500;
+      --warn-soft: rgba(255,149,0,0.08);
+      --warn-dark: #c93400;
+      --danger: #ff3b30;
+      --danger-soft: rgba(255,59,48,0.08);
+      --hero-from: #5856d6;
+      --hero-to: #af52de;
+      --hero-ink: #fff;
+      --hero-muted: rgba(255,255,255,0.72);
+      --tl-line: #d1d1d6;
+      --tl-dot-ok: #34c759;
+      --tl-dot-warn: #ff9500;
+      --tl-dot-bad: #ff3b30;
+      --radius: 14px;
       --radius-sm: 10px;
-      --shadow-sm: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
-      --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
-      --shadow-lg: 0 10px 30px rgba(0,0,0,0.1);
-      --transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      --shadow: 0 1px 4px rgba(0,0,0,0.04), 0 2px 8px rgba(0,0,0,0.04);
+      --shadow-hover: 0 4px 16px rgba(0,0,0,0.08);
+      --transition: 0.2s ease;
     }
     @media (prefers-color-scheme: dark) {
       :root {
-        --bg: #0f1117;
-        --surface: #1a1d2e;
-        --ink: #e8eaed;
-        --muted: #9ca3af;
-        --subtle: #6b7280;
-        --border: #2d3348;
-        --primary: #818cf8;
-        --primary-light: #1e1b4b;
-        --primary-dark: #a5b4fc;
-        --success: #34d399;
-        --success-light: #064e3b;
-        --success-dark: #6ee7b7;
-        --warn: #fbbf24;
-        --warn-light: #451a03;
-        --warn-dark: #fcd34d;
-        --danger: #f87171;
-        --danger-light: #450a0a;
-        --hero-from: #3730a3;
-        --hero-to: #5b21b6;
-        --hero-ink: #f0f0ff;
-        --hero-muted: rgba(255,255,255,0.6);
-        --card-hover: #222640;
-        --shadow-sm: 0 1px 3px rgba(0,0,0,0.3);
-        --shadow-md: 0 4px 12px rgba(0,0,0,0.4);
-        --shadow-lg: 0 10px 30px rgba(0,0,0,0.5);
+        --bg: #000000;
+        --surface: #1c1c1e;
+        --ink: #f5f5f7;
+        --muted: #98989d;
+        --subtle: #636366;
+        --border: #38383a;
+        --primary: #7d7aff;
+        --primary-soft: rgba(125,122,255,0.15);
+        --primary-dark: #b4b2ff;
+        --success: #30d158;
+        --success-soft: rgba(48,209,88,0.15);
+        --success-dark: #30d158;
+        --warn: #ffd60a;
+        --warn-soft: rgba(255,214,10,0.12);
+        --warn-dark: #ffd60a;
+        --danger: #ff453a;
+        --danger-soft: rgba(255,69,58,0.15);
+        --hero-from: #3634a3;
+        --hero-to: #7d2fa5;
+        --hero-ink: #f5f5f7;
+        --hero-muted: rgba(255,255,255,0.56);
+        --tl-line: #48484a;
+        --tl-dot-ok: #30d158;
+        --tl-dot-warn: #ffd60a;
+        --tl-dot-bad: #ff453a;
+        --shadow: 0 1px 4px rgba(0,0,0,0.3);
+        --shadow-hover: 0 4px 16px rgba(0,0,0,0.4);
       }
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -82,15 +86,15 @@
     body {
       color: var(--ink);
       background: var(--bg);
-      font: 15px/1.6 system-ui, -apple-system, "Segoe UI", "PingFang SC", "Noto Sans SC", "Microsoft YaHei", sans-serif;
+      font: 15px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Noto Sans SC", "Microsoft YaHei", sans-serif;
       -webkit-font-smoothing: antialiased;
     }
 
     /* ===== Hero ===== */
     .hero {
-      background: linear-gradient(135deg, var(--hero-from), var(--hero-to));
+      background: linear-gradient(145deg, var(--hero-from), var(--hero-to));
       color: var(--hero-ink);
-      padding: 48px 20px 56px;
+      padding: 52px 20px 60px;
       text-align: center;
       position: relative;
       overflow: hidden;
@@ -99,99 +103,91 @@
       content: '';
       position: absolute;
       inset: 0;
-      background: radial-gradient(circle at 20% 50%, rgba(255,255,255,0.08) 0%, transparent 50%),
-                  radial-gradient(circle at 80% 20%, rgba(255,255,255,0.05) 0%, transparent 40%);
+      background:
+        radial-gradient(ellipse at 25% 0%, rgba(255,255,255,0.12) 0%, transparent 50%),
+        radial-gradient(ellipse at 75% 100%, rgba(255,255,255,0.06) 0%, transparent 50%);
       pointer-events: none;
     }
-    .hero-inner { max-width: 640px; margin: 0 auto; position: relative; }
-    .hero .logo {
+    .hero-inner { max-width: 560px; margin: 0 auto; position: relative; }
+    .logo-icon {
+      width: 56px; height: 56px;
+      background: rgba(255,255,255,0.18);
+      border-radius: 16px;
       display: inline-flex;
       align-items: center;
-      gap: 10px;
-      margin-bottom: 16px;
-    }
-    .hero .logo-icon {
-      width: 48px; height: 48px;
-      background: rgba(255,255,255,0.2);
-      border-radius: 14px;
-      display: flex;
-      align-items: center;
       justify-content: center;
-      font-size: 26px;
-      backdrop-filter: blur(8px);
+      font-size: 30px;
+      margin-bottom: 18px;
+      backdrop-filter: blur(12px);
     }
     .hero h1 {
       font-size: 2rem;
       font-weight: 800;
       letter-spacing: -0.03em;
-      margin: 0 0 10px;
-      line-height: 1.2;
+      margin-bottom: 10px;
     }
     .hero .tagline {
       color: var(--hero-muted);
-      font-size: 1rem;
-      max-width: 420px;
-      margin: 0 auto;
-      line-height: 1.6;
+      font-size: 0.95rem;
+      line-height: 1.65;
     }
 
-    /* ===== Stats Bar ===== */
+    /* ===== Stats ===== */
     .stats-bar {
-      max-width: 960px;
-      margin: -32px auto 0;
+      max-width: 680px;
+      margin: -30px auto 0;
       padding: 0 16px;
       position: relative;
       z-index: 2;
     }
     .stats-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      grid-template-columns: repeat(4, 1fr);
       gap: 1px;
       background: var(--border);
       border-radius: var(--radius);
       overflow: hidden;
-      box-shadow: var(--shadow-lg);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+    }
+    @media (prefers-color-scheme: dark) {
+      .stats-grid { box-shadow: 0 8px 30px rgba(0,0,0,0.3); }
     }
     .stat {
       background: var(--surface);
-      padding: 20px 16px;
+      padding: 18px 10px;
       text-align: center;
     }
     .stat-value {
-      font-size: 1.75rem;
+      font-size: 1.6rem;
       font-weight: 800;
       font-variant-numeric: tabular-nums;
       line-height: 1.2;
     }
-    .stat-value.primary { color: var(--primary); }
-    .stat-value.success { color: var(--success); }
-    .stat-value.warn { color: var(--warn); }
+    .stat-value.c-primary { color: var(--primary); }
+    .stat-value.c-success { color: var(--success); }
+    .stat-value.c-warn { color: var(--warn); }
     .stat-label {
-      font-size: 0.8rem;
+      font-size: 0.72rem;
       color: var(--muted);
-      margin-top: 4px;
+      margin-top: 2px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      font-weight: 600;
     }
 
     /* ===== Container ===== */
     .container {
-      max-width: 960px;
+      max-width: 680px;
       margin: 0 auto;
-      padding: 24px 16px;
+      padding: 28px 16px 0;
     }
 
-    /* ===== Filter Chips ===== */
-    .filter-section {
+    /* ===== Filters ===== */
+    .filter-bar {
       display: flex;
-      align-items: center;
-      gap: 8px;
+      gap: 6px;
       flex-wrap: wrap;
-      margin-bottom: 20px;
-    }
-    .filter-label {
-      font-size: 0.85rem;
-      font-weight: 600;
-      color: var(--muted);
-      margin-right: 4px;
+      margin-bottom: 24px;
     }
     .chip {
       appearance: none;
@@ -199,11 +195,11 @@
       background: var(--surface);
       color: var(--muted);
       border-radius: 999px;
-      padding: 7px 14px;
+      padding: 6px 13px;
       cursor: pointer;
       font: inherit;
-      font-size: 0.85rem;
-      font-weight: 500;
+      font-size: 0.82rem;
+      font-weight: 600;
       transition: all var(--transition);
       white-space: nowrap;
     }
@@ -212,113 +208,191 @@
       background: var(--primary);
       color: #fff;
       border-color: transparent;
-      box-shadow: 0 2px 8px rgba(79,70,229,0.3);
-    }
-    @media (prefers-color-scheme: dark) {
-      .chip[aria-pressed="true"] { box-shadow: 0 2px 8px rgba(129,140,248,0.3); }
     }
 
-    /* ===== Code Cards ===== */
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: 14px;
+    /* ===== Timeline ===== */
+    .timeline {
+      position: relative;
+      padding-left: 36px;
     }
-    .card {
+    /* The vertical line */
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 11px;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: var(--tl-line);
+      border-radius: 1px;
+    }
+    /* Date separator */
+    .tl-date {
+      position: relative;
+      padding: 8px 0 12px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+    .tl-date::before {
+      content: '';
+      position: absolute;
+      left: -36px;
+      top: 10px;
+      width: 24px;
+      height: 24px;
+      background: var(--bg);
+      border: 2px solid var(--tl-line);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .tl-date::after {
+      content: '📅';
+      position: absolute;
+      left: -33px;
+      top: 11px;
+      font-size: 13px;
+      line-height: 22px;
+      width: 22px;
+      text-align: center;
+    }
+
+    /* Each code entry */
+    .tl-item {
+      position: relative;
+      padding-bottom: 16px;
+    }
+    /* The dot on the timeline */
+    .tl-item::before {
+      content: '';
+      position: absolute;
+      left: -36px;
+      top: 18px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--tl-dot-warn);
+      border: 2.5px solid var(--bg);
+      box-shadow: 0 0 0 2px var(--tl-dot-warn);
+      z-index: 1;
+    }
+    .tl-item.is-ok::before {
+      background: var(--tl-dot-ok);
+      box-shadow: 0 0 0 2px var(--tl-dot-ok);
+      animation: glow-pulse 2.5s ease-in-out infinite;
+    }
+    .tl-item.is-bad::before {
+      background: var(--tl-dot-bad);
+      box-shadow: 0 0 0 2px var(--tl-dot-bad);
+    }
+    .tl-item.is-tried::before {
+      background: var(--subtle);
+      box-shadow: 0 0 0 2px var(--subtle);
+    }
+    @keyframes glow-pulse {
+      0%, 100% { box-shadow: 0 0 0 2px var(--tl-dot-ok), 0 0 0 4px transparent; }
+      50% { box-shadow: 0 0 0 2px var(--tl-dot-ok), 0 0 0 7px rgba(52,199,89,0.2); }
+    }
+    @media (prefers-color-scheme: dark) {
+      @keyframes glow-pulse {
+        0%, 100% { box-shadow: 0 0 0 2px var(--tl-dot-ok), 0 0 0 4px transparent; }
+        50% { box-shadow: 0 0 0 2px var(--tl-dot-ok), 0 0 0 7px rgba(48,209,88,0.3); }
+      }
+    }
+
+    /* Card inside timeline */
+    .tl-card {
       background: var(--surface);
       border: 1px solid var(--border);
       border-radius: var(--radius);
-      padding: 18px 20px;
+      padding: 16px 18px;
       transition: all var(--transition);
-      position: relative;
-      overflow: hidden;
+      box-shadow: var(--shadow);
     }
-    .card:hover {
-      border-color: var(--primary);
-      box-shadow: var(--shadow-md);
+    .tl-card:hover {
+      box-shadow: var(--shadow-hover);
       transform: translateY(-1px);
     }
-    .card.available {
-      border-left: 4px solid var(--success);
+    .tl-item.is-ok .tl-card {
+      border-color: rgba(52,199,89,0.3);
     }
-    .card.used {
-      opacity: 0.7;
-    }
-    .card.used:hover { opacity: 0.9; }
-    .card.tried-card {
+    .tl-item.is-tried .tl-card {
       opacity: 0.5;
-      border-left: 4px solid var(--danger);
     }
-    .card-header {
+    .tl-item.is-tried .tl-card:hover { opacity: 0.75; }
+
+    /* Card layout */
+    .tl-top {
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 10px;
-      margin-bottom: 12px;
+      margin-bottom: 8px;
     }
-    .code-text {
+    .tl-code {
       font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-      font-size: 1.35rem;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      color: var(--ink);
+      font-size: 1.4rem;
+      font-weight: 800;
+      letter-spacing: 0.1em;
     }
-    .card.available .code-text { color: var(--success-dark); }
+    .tl-item.is-ok .tl-code { color: var(--success-dark); }
     @media (prefers-color-scheme: dark) {
-      .card.available .code-text { color: var(--success); }
+      .tl-item.is-ok .tl-code { color: var(--success); }
     }
-    .badge {
+    .tl-badge {
       display: inline-flex;
       align-items: center;
-      gap: 4px;
+      gap: 5px;
       border-radius: 999px;
       padding: 3px 10px;
-      font-size: 0.75rem;
-      font-weight: 600;
+      font-size: 0.72rem;
+      font-weight: 700;
       white-space: nowrap;
       flex-shrink: 0;
     }
-    .badge.ok { background: var(--success-light); color: var(--success); }
-    .badge.warn { background: var(--warn-light); color: var(--warn); }
-    .badge.bad { background: var(--danger-light); color: var(--danger); }
-    .badge-dot {
-      width: 6px; height: 6px;
+    .tl-badge.ok { background: var(--success-soft); color: var(--success-dark); }
+    .tl-badge.warn { background: var(--warn-soft); color: var(--warn); }
+    .tl-badge.bad { background: var(--danger-soft); color: var(--danger); }
+    @media (prefers-color-scheme: dark) {
+      .tl-badge.ok { color: var(--success); }
+      .tl-badge.warn { color: var(--warn); }
+      .tl-badge.bad { color: var(--danger); }
+    }
+    .tl-badge-dot {
+      width: 5px; height: 5px;
       border-radius: 50%;
       background: currentColor;
     }
-    .badge.ok .badge-dot { animation: pulse 2s ease-in-out infinite; }
-    @keyframes pulse {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.4; }
+    .tl-badge.ok .tl-badge-dot {
+      animation: dot-blink 2s ease-in-out infinite;
     }
-    .card-meta {
+    @keyframes dot-blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+
+    .tl-info {
       display: flex;
       align-items: center;
-      gap: 14px;
+      gap: 6px 14px;
       flex-wrap: wrap;
-      font-size: 0.82rem;
+      font-size: 0.8rem;
       color: var(--muted);
-      margin-bottom: 12px;
+      margin-bottom: 10px;
     }
-    .card-meta a { color: var(--primary); text-decoration: none; }
-    .card-meta a:hover { text-decoration: underline; }
-    .card-meta .sep { color: var(--border); }
-    .meta-item {
-      display: inline-flex;
-      align-items: center;
-      gap: 4px;
-    }
-    .meta-icon {
-      width: 14px; height: 14px;
-      flex-shrink: 0;
-      opacity: 0.5;
-    }
-    .card-expires {
-      font-size: 0.78rem;
+    .tl-info a { color: var(--primary); text-decoration: none; }
+    .tl-info a:hover { text-decoration: underline; }
+    .tl-expires {
+      font-size: 0.76rem;
       color: var(--warn);
-      margin-bottom: 12px;
+      margin-bottom: 10px;
     }
-    .card-actions {
+
+    .tl-actions {
       display: flex;
       gap: 8px;
     }
@@ -327,25 +401,19 @@
       appearance: none;
       border: 0;
       border-radius: var(--radius-sm);
-      padding: 10px 16px;
+      padding: 9px 14px;
       cursor: pointer;
       font: inherit;
-      font-size: 0.9rem;
-      font-weight: 600;
+      font-size: 0.85rem;
+      font-weight: 700;
       background: var(--primary);
       color: #fff;
       transition: all var(--transition);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 6px;
     }
-    .btn-copy:hover { background: var(--primary-dark); transform: scale(1.02); }
+    .btn-copy:hover { filter: brightness(1.1); transform: scale(1.015); }
     .btn-copy:active { transform: scale(0.98); }
-    .btn-copy.copied {
-      background: var(--success);
-    }
-    .card.used .btn-copy, .card.tried-card .btn-copy {
+    .btn-copy.copied { background: var(--success); }
+    .tl-item:not(.is-ok) .btn-copy {
       background: var(--border);
       color: var(--muted);
     }
@@ -355,72 +423,68 @@
       background: transparent;
       color: var(--muted);
       border-radius: var(--radius-sm);
-      padding: 10px 12px;
+      padding: 9px 11px;
       cursor: pointer;
       font: inherit;
-      font-size: 0.82rem;
+      font-size: 0.8rem;
+      font-weight: 500;
       transition: all var(--transition);
       white-space: nowrap;
     }
     .btn-mark:hover { border-color: var(--danger); color: var(--danger); }
-    .btn-mark.is-tried { border-color: var(--danger); color: var(--danger); background: var(--danger-light); }
+    .btn-mark.is-tried { border-color: var(--danger); color: var(--danger); background: var(--danger-soft); }
 
-    /* ===== Sections ===== */
-    .section-card {
+    /* ===== Bottom sections ===== */
+    .info-section {
       background: var(--surface);
       border: 1px solid var(--border);
       border-radius: var(--radius);
-      padding: 24px;
-      margin-top: 24px;
+      padding: 22px 20px;
+      margin-top: 28px;
+      box-shadow: var(--shadow);
     }
-    .section-card h2 {
-      font-size: 1.1rem;
+    .info-section h2 {
+      font-size: 1.05rem;
       font-weight: 700;
-      margin-bottom: 12px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
+      margin-bottom: 10px;
     }
-    .section-card p, .section-card li {
+    .info-section p, .info-section li {
       color: var(--muted);
-      font-size: 0.9rem;
+      font-size: 0.88rem;
       line-height: 1.7;
     }
-    .section-card ol {
-      padding-left: 1.2rem;
-      margin: 8px 0;
-    }
-    .section-card li { margin-bottom: 6px; }
-    .section-card li strong { color: var(--ink); }
+    .info-section ol { padding-left: 1.2rem; margin: 6px 0; }
+    .info-section li { margin-bottom: 4px; }
+    .info-section li strong { color: var(--ink); }
     .alert-warn {
-      background: var(--warn-light);
-      border: 1px solid rgba(217,119,6,0.2);
+      background: var(--warn-soft);
       border-radius: var(--radius-sm);
-      padding: 14px 16px;
-      margin-top: 14px;
+      padding: 12px 14px;
+      margin-top: 12px;
     }
     .alert-warn strong {
-      display: flex;
-      align-items: center;
-      gap: 6px;
       color: var(--warn);
-      margin-bottom: 4px;
+      display: block;
+      margin-bottom: 3px;
     }
     .alert-warn p { margin: 0; }
 
-    /* ===== Empty & Loading ===== */
+    /* ===== Empty ===== */
     .empty-state {
       text-align: center;
-      padding: 48px 20px;
+      padding: 48px 16px;
       color: var(--muted);
     }
-    .empty-icon { font-size: 2.5rem; margin-bottom: 12px; }
-    .loading-shimmer {
+    .empty-icon { font-size: 2.4rem; margin-bottom: 10px; }
+
+    /* Loading skeleton */
+    .tl-skeleton {
+      height: 110px;
       background: linear-gradient(90deg, var(--border) 25%, var(--surface) 50%, var(--border) 75%);
       background-size: 200% 100%;
       animation: shimmer 1.5s infinite;
       border-radius: var(--radius);
-      height: 180px;
+      margin-bottom: 16px;
     }
     @keyframes shimmer {
       0% { background-position: 200% 0; }
@@ -430,64 +494,46 @@
     /* ===== Footer ===== */
     footer {
       text-align: center;
-      padding: 32px 20px 40px;
+      padding: 32px 16px 40px;
       color: var(--subtle);
-      font-size: 0.82rem;
-    }
-    footer a { color: var(--muted); }
-    .visit-stats {
-      margin-top: 8px;
       font-size: 0.78rem;
     }
+    .visit-stats { margin-top: 6px; }
 
-    /* ===== Responsive ===== */
-    @media (max-width: 640px) {
-      .hero { padding: 36px 16px 44px; }
-      .hero h1 { font-size: 1.6rem; }
-      .stats-bar { margin-top: -24px; }
-      .stat { padding: 14px 10px; }
-      .stat-value { font-size: 1.4rem; }
-      .cards { grid-template-columns: 1fr; gap: 10px; }
-      .card { padding: 16px; }
-      .code-text { font-size: 1.2rem; }
-      .section-card { padding: 18px; }
-    }
-
-    /* ===== Scroll-to-top ===== */
+    /* ===== Utils ===== */
     .scroll-top {
       position: fixed;
       bottom: 24px;
       right: 24px;
-      width: 44px;
-      height: 44px;
+      width: 42px;
+      height: 42px;
       border-radius: 50%;
       background: var(--primary);
       color: #fff;
       border: 0;
       cursor: pointer;
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       display: none;
       align-items: center;
       justify-content: center;
-      box-shadow: var(--shadow-md);
+      box-shadow: 0 4px 14px rgba(88,86,214,0.35);
       transition: all var(--transition);
       z-index: 50;
     }
-    .scroll-top:hover { transform: scale(1.1); }
+    .scroll-top:hover { transform: scale(1.12); }
     .scroll-top.show { display: flex; }
 
-    /* ===== Toast ===== */
     .toast {
       position: fixed;
       bottom: 80px;
       left: 50%;
-      transform: translateX(-50%) translateY(20px);
+      transform: translateX(-50%) translateY(16px);
       background: var(--ink);
       color: var(--bg);
-      padding: 10px 20px;
+      padding: 10px 22px;
       border-radius: 999px;
       font-size: 0.85rem;
-      font-weight: 500;
+      font-weight: 600;
       opacity: 0;
       transition: all 0.3s ease;
       z-index: 100;
@@ -495,59 +541,66 @@
       white-space: nowrap;
     }
     .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 540px) {
+      .hero { padding: 40px 16px 48px; }
+      .hero h1 { font-size: 1.55rem; }
+      .stats-bar { margin-top: -24px; }
+      .stat { padding: 14px 6px; }
+      .stat-value { font-size: 1.3rem; }
+      .stat-label { font-size: 0.65rem; }
+      .timeline { padding-left: 30px; }
+      .timeline::before { left: 8px; }
+      .tl-item::before { left: -30px; top: 16px; width: 10px; height: 10px; }
+      .tl-date::before { left: -30px; width: 20px; height: 20px; }
+      .tl-date::after { left: -28px; font-size: 11px; line-height: 18px; width: 18px; }
+      .tl-code { font-size: 1.15rem; }
+      .tl-card { padding: 14px; }
+      .info-section { padding: 18px 16px; }
+    }
   </style>
 </head>
 <body>
 
-  <!-- Hero -->
   <header class="hero">
     <div class="hero-inner">
-      <div class="logo">
-        <div class="logo-icon">🫘</div>
-      </div>
+      <div class="logo-icon">🫘</div>
       <h1>小豆邀请码抓码站</h1>
       <p class="tagline">社区收集的豆包小豆邀请码，来自 X 公开分享帖<br>每 5 分钟自动巡检 · 本页每分钟自动刷新</p>
     </div>
   </header>
 
-  <!-- Stats -->
   <div class="stats-bar">
     <div class="stats-grid">
       <div class="stat">
-        <div class="stat-value primary" id="stat-total">—</div>
-        <div class="stat-label">收录总数</div>
+        <div class="stat-value c-primary" id="stat-total">—</div>
+        <div class="stat-label">收录</div>
       </div>
       <div class="stat">
-        <div class="stat-value success" id="stat-available">—</div>
-        <div class="stat-label">可能可用</div>
+        <div class="stat-value c-success" id="stat-available">—</div>
+        <div class="stat-label">可用</div>
       </div>
       <div class="stat">
-        <div class="stat-value warn" id="stat-used">—</div>
-        <div class="stat-label">可能已用</div>
+        <div class="stat-value c-warn" id="stat-used">—</div>
+        <div class="stat-label">已用</div>
       </div>
       <div class="stat">
-        <div class="stat-value" id="stat-updated" style="font-size:0.95rem;font-weight:600">—</div>
-        <div class="stat-label">最后更新</div>
+        <div class="stat-value" id="stat-updated" style="font-size:0.85rem;font-weight:700">—</div>
+        <div class="stat-label">更新</div>
       </div>
     </div>
   </div>
 
   <div class="container">
-
-    <!-- Filters -->
-    <div class="filter-section" id="filters" role="tablist" aria-label="按状态筛选">
-      <span class="filter-label">筛选</span>
+    <div class="filter-bar" id="filters" role="tablist" aria-label="按状态筛选"></div>
+    <div class="timeline" id="timeline">
+      <div class="tl-skeleton"></div>
+      <div class="tl-skeleton"></div>
+      <div class="tl-skeleton"></div>
     </div>
 
-    <!-- Cards Grid -->
-    <div class="cards" id="cards">
-      <div class="loading-shimmer"></div>
-      <div class="loading-shimmer"></div>
-      <div class="loading-shimmer"></div>
-    </div>
-
-    <!-- Info Section -->
-    <div class="section-card">
+    <div class="info-section">
       <h2>💡 不用邀请码的路径</h2>
       <p>有人说豆包老号有机会免排队。App Store 搜「小豆 豆包旗下」可以找到小豆 App。</p>
       <ol>
@@ -561,10 +614,9 @@
       </div>
     </div>
 
-    <!-- Disclaimer -->
-    <div class="section-card">
+    <div class="info-section">
       <h2>📋 说明</h2>
-      <p>本站非官方，与豆包、字节跳动无关。数据来自 X 公开帖子的社区整理。<strong>一码只能用一次</strong>，请尽快尝试并核对原帖。「我试过了，不能用」标记仅保存在您本地浏览器中，不会改写巡检状态。</p>
+      <p>本站非官方，与豆包、字节跳动无关。数据来自 X 公开帖子的社区整理。<strong>一码只能用一次</strong>，请尽快尝试并核对原帖。「我试过了，不能用」标记仅保存在您本地浏览器中。</p>
     </div>
   </div>
 
@@ -582,86 +634,76 @@
   <script>
     const DATA_URL = "codes.json";
     const TRIED_KEY = "xiaodou-invite-codes-tried";
-    const STATUS_LABEL = {
-      maybe_available: "可能可用",
-      maybe_used: "可能已用",
-      confirmed_used: "已确认被用",
-    };
+    const STATUS_LABEL = { maybe_available: "可能可用", maybe_used: "可能已用", confirmed_used: "已确认被用" };
+    const STATUS_CLS  = { maybe_available: "ok", maybe_used: "warn", confirmed_used: "bad" };
 
     let payload = { lastUpdated: "", codes: [] };
     let filter = "all";
     let copiedCode = null;
     let copiedTimer = null;
 
-    // --- localStorage helpers ---
     function loadTried() {
       try {
-        const raw = localStorage.getItem(TRIED_KEY);
-        if (!raw) return [];
-        const parsed = JSON.parse(raw);
-        return Array.isArray(parsed) ? parsed.filter(x => typeof x === "string") : [];
+        const r = localStorage.getItem(TRIED_KEY);
+        if (!r) return [];
+        const p = JSON.parse(r);
+        return Array.isArray(p) ? p.filter(x => typeof x === "string") : [];
       } catch { return []; }
     }
-    function saveTried(list) {
-      try { localStorage.setItem(TRIED_KEY, JSON.stringify(list)); } catch {}
-    }
+    function saveTried(l) { try { localStorage.setItem(TRIED_KEY, JSON.stringify(l)); } catch {} }
     let tried = loadTried();
+    function toggleTried(c) { tried = tried.includes(c) ? tried.filter(x => x !== c) : [...tried, c]; saveTried(tried); render(); }
 
-    function toggleTried(code) {
-      tried = tried.includes(code) ? tried.filter(x => x !== code) : [...tried, code];
-      saveTried(tried);
-      render();
-    }
+    function showToast(t) { const e = document.getElementById("toast"); e.textContent = t; e.classList.add("show"); setTimeout(() => e.classList.remove("show"), 1800); }
 
-    // --- Toast ---
-    function showToast(text) {
-      const el = document.getElementById("toast");
-      el.textContent = text;
-      el.classList.add("show");
-      setTimeout(() => el.classList.remove("show"), 1800);
-    }
-
-    // --- Copy ---
     async function copyCode(code) {
-      try {
-        await navigator.clipboard.writeText(code);
-        copiedCode = code;
-        clearTimeout(copiedTimer);
-        copiedTimer = setTimeout(() => { copiedCode = null; render(); }, 1800);
-        showToast(`已复制 ${code}`);
-        render();
-      } catch {}
+      try { await navigator.clipboard.writeText(code); copiedCode = code; clearTimeout(copiedTimer); copiedTimer = setTimeout(() => { copiedCode = null; render(); }, 1800); showToast("已复制 " + code); render(); } catch {}
     }
 
-    // --- Filtering ---
     function filteredCodes() {
-      const codes = payload.codes || [];
-      if (filter === "all") return codes;
-      if (filter === "tried") return codes.filter(c => tried.includes(c.code));
-      return codes.filter(c => c.status === filter);
+      const c = payload.codes || [];
+      if (filter === "all") return c;
+      if (filter === "tried") return c.filter(x => tried.includes(x.code));
+      return c.filter(x => x.status === filter);
     }
-
     function counts() {
-      const codes = payload.codes || [];
-      return {
-        all: codes.length,
-        maybe_available: codes.filter(c => c.status === "maybe_available").length,
-        maybe_used: codes.filter(c => c.status === "maybe_used").length,
-        confirmed_used: codes.filter(c => c.status === "confirmed_used").length,
-        tried: codes.filter(c => tried.includes(c.code)).length,
-      };
+      const c = payload.codes || [];
+      return { all: c.length, maybe_available: c.filter(x => x.status === "maybe_available").length, maybe_used: c.filter(x => x.status === "maybe_used").length, confirmed_used: c.filter(x => x.status === "confirmed_used").length, tried: c.filter(x => tried.includes(x.code)).length };
     }
 
-    // --- Escape ---
-    function esc(v) {
-      return String(v).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
+    function esc(v) { return String(v).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;"); }
+    function safeUrl(v) { const s = String(v || ""); return /^https:\/\//i.test(s) ? esc(s) : ""; }
+
+    // Extract date string from postedAt for grouping
+    function dateKey(postedAt) {
+      // "2026-11-25 10:24:00 北京时间" → "2026-11-25"
+      const m = String(postedAt || "").match(/^(\d{4}-\d{2}-\d{2})/);
+      return m ? m[1] : "未知日期";
     }
-    function safeUrl(v) {
-      const s = String(v || "");
-      return /^https:\/\//i.test(s) ? esc(s) : "";
+    function formatDate(key) {
+      if (key === "未知日期") return key;
+      const d = new Date(key + "T00:00:00+08:00");
+      const today = new Date(); today.setHours(today.getHours() + 8 - today.getTimezoneOffset() / 60);
+      const todayStr = today.toISOString().slice(0, 10);
+      const yesterday = new Date(today); yesterday.setDate(yesterday.getDate() - 1);
+      const yestStr = yesterday.toISOString().slice(0, 10);
+      if (key === todayStr) return "今天 · " + key;
+      if (key === yestStr) return "昨天 · " + key;
+      const weekdays = ["周日","周一","周二","周三","周四","周五","周六"];
+      return weekdays[d.getDay()] + " · " + key;
+    }
+    function timeOnly(postedAt) {
+      const m = String(postedAt || "").match(/(\d{2}:\d{2})/);
+      return m ? m[1] : esc(postedAt);
     }
 
-    // --- Render ---
+    function itemState(item) {
+      if (tried.includes(item.code)) return "is-tried";
+      if (item.status === "maybe_available") return "is-ok";
+      if (item.status === "confirmed_used") return "is-bad";
+      return ""; // warn by default
+    }
+
     function renderStats() {
       const c = counts();
       document.getElementById("stat-total").textContent = c.all;
@@ -672,80 +714,71 @@
 
     function renderFilters() {
       const c = counts();
-      const options = [
+      const opts = [
         ["all", "全部", c.all],
-        ["maybe_available", "🟢 可能可用", c.maybe_available],
-        ["maybe_used", "🟡 可能已用", c.maybe_used],
-        ["confirmed_used", "🔴 已确认被用", c.confirmed_used],
-        ["tried", "🚫 我试过", c.tried],
+        ["maybe_available", "🟢 可用", c.maybe_available],
+        ["maybe_used", "🟡 已用", c.maybe_used],
+        ["confirmed_used", "🔴 确认", c.confirmed_used],
+        ["tried", "🚫 试过", c.tried],
       ];
-      const chips = options.map(([val, label, cnt]) => {
-        const pressed = filter === val ? "true" : "false";
-        return `<button type="button" class="chip" data-filter="${val}" aria-pressed="${pressed}">${label} ${cnt}</button>`;
-      }).join("");
-      document.getElementById("filters").innerHTML = `<span class="filter-label">筛选</span>${chips}`;
+      document.getElementById("filters").innerHTML = opts.map(([v, l, n]) =>
+        `<button type="button" class="chip" data-filter="${v}" aria-pressed="${filter === v}">${l} ${n}</button>`
+      ).join("");
     }
 
     function badgeHtml(item) {
-      if (tried.includes(item.code)) {
-        return `<span class="badge bad"><span class="badge-dot"></span>不能用</span>`;
-      }
-      const map = { maybe_available: "ok", maybe_used: "warn", confirmed_used: "bad" };
-      const cls = map[item.status] || "warn";
-      const label = STATUS_LABEL[item.status] || esc(item.status);
-      return `<span class="badge ${cls}"><span class="badge-dot"></span>${label}</span>`;
+      if (tried.includes(item.code)) return `<span class="tl-badge bad"><span class="tl-badge-dot"></span>不能用</span>`;
+      const cls = STATUS_CLS[item.status] || "warn";
+      return `<span class="tl-badge ${cls}"><span class="tl-badge-dot"></span>${STATUS_LABEL[item.status] || esc(item.status)}</span>`;
     }
 
-    function cardClass(item) {
-      if (tried.includes(item.code)) return "card tried-card";
-      if (item.status === "maybe_available") return "card available";
-      return "card used";
-    }
-
-    function renderCards() {
+    function renderTimeline() {
       const rows = filteredCodes();
-      const grid = document.getElementById("cards");
+      const el = document.getElementById("timeline");
       if (!rows.length) {
-        grid.innerHTML = `<div class="empty-state" style="grid-column:1/-1"><div class="empty-icon">🔍</div><p>暂无符合筛选条件的邀请码</p></div>`;
+        el.innerHTML = `<div class="empty-state"><div class="empty-icon">🔍</div><p>暂无符合筛选条件的邀请码</p></div>`;
         return;
       }
-      grid.innerHTML = rows.map(item => {
+
+      let html = "";
+      let lastDate = "";
+      for (const item of rows) {
+        const dk = dateKey(item.postedAt);
+        if (dk !== lastDate) {
+          lastDate = dk;
+          html += `<div class="tl-date">${formatDate(dk)}</div>`;
+        }
+        const st = itemState(item);
         const isTried = tried.includes(item.code);
         const isCopied = copiedCode === item.code;
-        const copyLabel = isCopied ? "✓ 已复制" : "复制邀请码";
-        const copiedClass = isCopied ? " copied" : "";
-        const markLabel = isTried ? "取消标记" : "✕ 不能用";
-        const markClass = isTried ? " is-tried" : "";
-        const expires = item.expires ? `<div class="card-expires">⏰ 有效期至 ${esc(item.expires)}</div>` : "";
-        const official = item.officialUrl ? ` <span class="sep">·</span> <a href="${safeUrl(item.officialUrl)}" target="_blank" rel="noopener">官方页</a>` : "";
         const postLink = item.postUrl ? `<a href="${safeUrl(item.postUrl)}" target="_blank" rel="noopener">@${esc(item.author)}</a>` : esc(item.author || "—");
+        const official = item.officialUrl ? ` · <a href="${safeUrl(item.officialUrl)}" target="_blank" rel="noopener">官方页</a>` : "";
+        const expires = item.expires ? `<div class="tl-expires">⏰ 至 ${esc(item.expires)}</div>` : "";
 
-        return `<div class="${cardClass(item)}">
-          <div class="card-header">
-            <span class="code-text">${esc(item.code)}</span>
-            ${badgeHtml(item)}
-          </div>
-          <div class="card-meta">
-            <span class="meta-item">${postLink}${official}</span>
-            <span class="meta-item">${esc(item.postedAt)}</span>
-            <span class="meta-item">💬 ${esc(item.replyCount)} 回复</span>
-          </div>
-          ${expires}
-          <div class="card-actions">
-            <button type="button" class="btn-copy${copiedClass}" data-copy="${esc(item.code)}">${copyLabel}</button>
-            <button type="button" class="btn-mark${markClass}" data-tried="${esc(item.code)}">${markLabel}</button>
+        html += `<div class="tl-item ${st}">
+          <div class="tl-card">
+            <div class="tl-top">
+              <span class="tl-code">${esc(item.code)}</span>
+              ${badgeHtml(item)}
+            </div>
+            <div class="tl-info">
+              <span>${postLink}${official}</span>
+              <span>🕐 ${timeOnly(item.postedAt)}</span>
+              <span>💬 ${esc(item.replyCount)}</span>
+            </div>
+            ${expires}
+            <div class="tl-actions">
+              <button type="button" class="btn-copy${isCopied ? " copied" : ""}" data-copy="${esc(item.code)}">${isCopied ? "✓ 已复制" : "复制邀请码"}</button>
+              <button type="button" class="btn-mark${isTried ? " is-tried" : ""}" data-tried="${esc(item.code)}">${isTried ? "取消标记" : "✕ 不能用"}</button>
+            </div>
           </div>
         </div>`;
-      }).join("");
+      }
+      el.innerHTML = html;
     }
 
-    function render() {
-      renderStats();
-      renderFilters();
-      renderCards();
-    }
+    function render() { renderStats(); renderFilters(); renderTimeline(); }
 
-    // --- Data ---
     async function loadData() {
       const r = await fetch(DATA_URL + "?t=" + Date.now(), { cache: "no-store" });
       if (!r.ok) throw new Error("HTTP " + r.status);
@@ -753,32 +786,24 @@
       render();
     }
 
-    // --- Events ---
     document.getElementById("filters").addEventListener("click", e => {
-      const btn = e.target.closest("button[data-filter]");
-      if (!btn) return;
-      filter = btn.getAttribute("data-filter");
+      const b = e.target.closest("button[data-filter]");
+      if (!b) return;
+      filter = b.getAttribute("data-filter");
       render();
     });
-
-    document.getElementById("cards").addEventListener("click", e => {
-      const copyBtn = e.target.closest("button[data-copy]");
-      if (copyBtn) { copyCode(copyBtn.getAttribute("data-copy")); return; }
-      const triedBtn = e.target.closest("button[data-tried]");
-      if (triedBtn) toggleTried(triedBtn.getAttribute("data-tried"));
+    document.getElementById("timeline").addEventListener("click", e => {
+      const cb = e.target.closest("button[data-copy]");
+      if (cb) { copyCode(cb.getAttribute("data-copy")); return; }
+      const tb = e.target.closest("button[data-tried]");
+      if (tb) toggleTried(tb.getAttribute("data-tried"));
     });
 
-    // Scroll-to-top
     const scrollBtn = document.getElementById("scrollTop");
-    window.addEventListener("scroll", () => {
-      scrollBtn.classList.toggle("show", window.scrollY > 400);
-    }, { passive: true });
+    window.addEventListener("scroll", () => scrollBtn.classList.toggle("show", window.scrollY > 400), { passive: true });
     scrollBtn.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
 
-    // Init
-    loadData().catch(() => {
-      document.getElementById("stat-updated").textContent = "载入失败";
-    });
+    loadData().catch(() => { document.getElementById("stat-updated").textContent = "载入失败"; });
     setInterval(() => loadData().catch(() => {}), 60000);
   </script>
   <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
