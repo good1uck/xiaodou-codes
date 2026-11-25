@@ -212,13 +212,15 @@
 
     /* ===== Leaderboard ===== */
     .board {
+      width: max-content;
+      max-width: 100%;
       background: var(--surface);
       border: 1px solid var(--border);
       border-radius: 10px;
     }
     .board-cols {
       display: grid;
-      grid-template-columns: 48px 112px 52px minmax(0, 1fr) 32px;
+      grid-template-columns: 48px 108px 4.8em minmax(6.5em, 12em) 2.8em 28px;
       align-items: center;
       column-gap: 8px;
       padding: 0 10px;
@@ -306,7 +308,13 @@
     }
     .who a { color: var(--primary); text-decoration: none; }
     .who a:hover { text-decoration: underline; }
-    .replies { color: var(--subtle); }
+    .replies {
+      font-variant-numeric: tabular-nums;
+      color: var(--muted);
+      font-size: 0.75rem;
+      text-align: right;
+      white-space: nowrap;
+    }
     .btn-mark {
       appearance: none;
       width: 26px;
@@ -436,8 +444,10 @@
       .hero h1 { font-size: 1.2rem; }
       .stat-value { font-size: 1rem; }
       .stat-label { font-size: 0.62rem; }
-      .board-cols { grid-template-columns: 42px minmax(0, 1fr) 40px 28px; }
+      .board { width: 100%; }
+      .board-cols { grid-template-columns: 40px minmax(0, 1fr) 4.2em 2.4em 28px; }
       .col-who, .who { display: none; }
+      .st { font-size: 0.68rem; }
       .code { font-size: 0.92rem; letter-spacing: 0.06em; }
       .info-section { padding: 18px 16px; }
     }
@@ -609,7 +619,7 @@
       const c = counts();
       const opts = [
         ["all", "全部", c.all],
-        ["maybe_available", "🟢 可用", c.maybe_available],
+        ["maybe_available", "🟢 可能可用", c.maybe_available],
         ["maybe_used", "🟡 已用", c.maybe_used],
         ["confirmed_used", "🔴 确认", c.confirmed_used],
         ["tried", "🚫 试过", c.tried],
@@ -619,7 +629,7 @@
       ).join("");
     }
 
-    const STATUS_SHORT = { maybe_available: "可用", maybe_used: "已用", confirmed_used: "确认" };
+    const STATUS_SHORT = { maybe_available: "可能可用", maybe_used: "已用", confirmed_used: "确认" };
 
     function statusCell(item) {
       if (tried.includes(item.code)) return `<span class="st bad">试过</span>`;
@@ -635,7 +645,7 @@
         return;
       }
 
-      let html = `<div class="board-cols board-head"><span>时间</span><span>邀请码</span><span>状态</span><span class="col-who">来源</span><span></span></div>`;
+      let html = `<div class="board-cols board-head"><span>时间</span><span>邀请码</span><span>状态</span><span class="col-who">来源</span><span>回复</span><span></span></div>`;
       let lastDate = "";
       for (const item of rows) {
         const dk = dateKey(item.postedAt);
@@ -649,14 +659,16 @@
         const who = item.postUrl
           ? `<a href="${safeUrl(item.postUrl)}" target="_blank" rel="noopener">@${esc(item.author || "原帖")}</a>`
           : esc(item.author || "—");
-        const replies = Number(item.replyCount) > 0 ? ` <span class="replies">· ${esc(item.replyCount)}</span>` : "";
+        const replyN = Number(item.replyCount);
+        const replies = Number.isFinite(replyN) ? String(replyN) : "0";
         const tip = [item.postedAt, item.expires ? "有效至 " + item.expires : "", "点邀请码复制"].filter(Boolean).join(" · ");
 
         html += `<div class="board-cols row ${st}" title="${esc(tip)}">
           <span class="cell-time">${timeOnly(item.postedAt)}</span>
           <button type="button" class="code${isCopied ? " copied" : ""}" data-copy="${esc(item.code)}">${esc(item.code)}</button>
           ${statusCell(item)}
-          <span class="who">${who}${replies}</span>
+          <span class="who">${who}</span>
+          <span class="replies" title="回复数">${esc(replies)}</span>
           <button type="button" class="btn-mark${isTried ? " is-tried" : ""}" data-tried="${esc(item.code)}" aria-label="${isTried ? "取消标记" : "标记不能用"}">${isTried ? "↩" : "×"}</button>
         </div>`;
       }
