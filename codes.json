@@ -1,7 +1,27 @@
 {
-  "lastUpdated": "2026-11-25 17:59 北京时间",
-  "lastSinceId": "2125528848469274979",
+  "lastUpdated": "2026-11-25 18:09 北京时间",
+  "lastSinceId": "2125531158402474121",
   "codes": [
+    {
+      "code": "PRINTF",
+      "postId": "2125531158402474121",
+      "author": "GetAskClaw",
+      "postUrl": "https://x.com/GetAskClaw/status/2125531158402474121",
+      "postedAt": "2026-11-25 18:04:53 北京时间",
+      "postedAtUtc": "2026-11-25T10:04:53.000Z",
+      "replyCount": 0,
+      "status": "maybe_available"
+    },
+    {
+      "code": "OUTPUT",
+      "postId": "2125531158402474121",
+      "author": "GetAskClaw",
+      "postUrl": "https://x.com/GetAskClaw/status/2125531158402474121",
+      "postedAt": "2026-11-25 18:04:53 北京时间",
+      "postedAtUtc": "2026-11-25T10:04:53.000Z",
+      "replyCount": 0,
+      "status": "maybe_available"
+    },
     {
       "code": "TNYA5J",
       "postId": "2125523830584250540",
