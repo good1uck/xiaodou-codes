@@ -1,7 +1,27 @@
 {
-  "lastUpdated": "2026-11-26 15:40 北京时间",
-  "lastSinceId": "2125855900154188176",
+  "lastUpdated": "2026-11-26 15:45 北京时间",
+  "lastSinceId": "2125857555499086322",
   "codes": [
+    {
+      "code": "MAKING",
+      "postId": "2125856688070598661",
+      "author": "Budgetlander",
+      "postUrl": "https://x.com/Budgetlander/status/2125856688070598661",
+      "postedAt": "2026-11-26 15:38:25 北京时间",
+      "postedAtUtc": "2026-11-26T07:38:25.000Z",
+      "replyCount": 0,
+      "status": "maybe_available"
+    },
+    {
+      "code": "ASKING",
+      "postId": "2125856688070598661",
+      "author": "Budgetlander",
+      "postUrl": "https://x.com/Budgetlander/status/2125856688070598661",
+      "postedAt": "2026-11-26 15:38:25 北京时间",
+      "postedAtUtc": "2026-11-26T07:38:25.000Z",
+      "replyCount": 0,
+      "status": "maybe_available"
+    },
     {
       "code": "SUNDAY",
       "postId": "2125855695216017578",
