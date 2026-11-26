@@ -1,7 +1,17 @@
 {
-  "lastUpdated": "2026-11-26 11:59 北京时间",
-  "lastSinceId": "2125801017237475751",
+  "lastUpdated": "2026-11-26 12:04 北京时间",
+  "lastSinceId": "2125801733293232475",
   "codes": [
+    {
+      "code": "CHROME",
+      "postId": "2125801721129828352",
+      "author": "weichen_ink",
+      "postUrl": "https://x.com/weichen_ink/status/2125801721129828352",
+      "postedAt": "2026-11-26 12:00:00 北京时间",
+      "postedAtUtc": "2026-11-26T04:00:00.000Z",
+      "replyCount": 0,
+      "status": "maybe_available"
+    },
     {
       "code": "C8R5SV",
       "postId": "2125801017237475751",
@@ -9,8 +19,8 @@
       "postUrl": "https://x.com/yiming_Falcon/status/2125801017237475751",
       "postedAt": "2026-11-26 11:57:12 北京时间",
       "postedAtUtc": "2026-11-26T03:57:12.000Z",
-      "replyCount": 0,
-      "status": "maybe_available"
+      "replyCount": 9,
+      "status": "maybe_used"
     },
     {
       "code": "LOSING",
