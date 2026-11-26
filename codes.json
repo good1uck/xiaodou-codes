@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-11-26 16:20 北京时间",
-  "lastSinceId": "2125866205827174411",
+  "lastUpdated": "2026-11-26 16:25 北京时间",
+  "lastSinceId": "2125867221851279390",
   "codes": [
     {
       "code": "TREVOR",
@@ -9,8 +9,8 @@
       "postUrl": "https://x.com/Budgetlander/status/2125866205827174411",
       "postedAt": "2026-11-26 16:16:14 北京时间",
       "postedAtUtc": "2026-11-26T08:16:14.000Z",
-      "replyCount": 0,
-      "status": "maybe_available"
+      "replyCount": 1,
+      "status": "maybe_used"
     },
     {
       "code": "SCARED",
@@ -19,8 +19,8 @@
       "postUrl": "https://x.com/Budgetlander/status/2125866205827174411",
       "postedAt": "2026-11-26 16:16:14 北京时间",
       "postedAtUtc": "2026-11-26T08:16:14.000Z",
-      "replyCount": 0,
-      "status": "maybe_available"
+      "replyCount": 1,
+      "status": "maybe_used"
     },
     {
       "code": "MAKING",
