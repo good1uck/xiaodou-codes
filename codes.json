@@ -1,7 +1,31 @@
 {
-  "lastUpdated": "2026-11-27 13:56 北京时间",
-  "lastSinceId": "2126189808695578629",
+  "lastUpdated": "2026-11-27 17:15 北京时间",
+  "lastSinceId": "2126242625367736584",
   "codes": [
+    {
+      "code": "M-Z5U953",
+      "postId": "2126242317350944792",
+      "author": "peng_xun",
+      "postUrl": "https://x.com/peng_xun/status/2126242317350944792",
+      "postedAt": "2026-11-27 17:10:46 北京时间",
+      "postedAtUtc": "2026-11-27T09:10:46.000Z",
+      "replyCount": 0,
+      "status": "maybe_available",
+      "officialUrl": "https://activity.doubao.com/ug/invite-share/M-Z5U953",
+      "note": "官方邀请页 https://activity.doubao.com/ug/invite-share/M-Z5U953",
+      "expires": "2026-11-29 17:01"
+    },
+    {
+      "code": "Z5U953",
+      "postId": "2126242317350944792",
+      "author": "peng_xun",
+      "postUrl": "https://x.com/peng_xun/status/2126242317350944792",
+      "postedAt": "2026-11-27 17:10:46 北京时间",
+      "postedAtUtc": "2026-11-27T09:10:46.000Z",
+      "replyCount": 0,
+      "status": "maybe_available",
+      "expires": "2026-11-29 17:01"
+    },
     {
       "code": "W36Z5Q",
       "postId": "2126189541375840360",
