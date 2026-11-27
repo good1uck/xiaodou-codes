@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-27 23:41 北京时间",
+  "lastUpdated": "2026-11-28 03:05 北京时间",
   "lastSinceId": "2126339090211901484",
   "codes": [
     {
@@ -358,8 +358,8 @@
       "postUrl": "https://x.com/Budgetlander/status/2125870022333509785",
       "postedAt": "2026-11-26 16:31:24 北京时间",
       "postedAtUtc": "2026-11-26T08:31:24.000Z",
-      "replyCount": 0,
-      "status": "maybe_available"
+      "replyCount": 1,
+      "status": "maybe_used"
     },
     {
       "code": "TREVOR",
