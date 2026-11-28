@@ -1,7 +1,31 @@
 {
-  "lastUpdated": "2026-11-28 17:36 北京时间",
-  "lastSinceId": "2126609543866073578",
+  "lastUpdated": "2026-11-28 18:06 北京时间",
+  "lastSinceId": "2126617284705997311",
   "codes": [
+    {
+      "code": "M-DJWSDE",
+      "postId": "2126616176365318269",
+      "author": "wsjbao",
+      "postUrl": "https://x.com/wsjbao/status/2126616176365318269",
+      "postedAt": "2026-11-28 17:56:21 北京时间",
+      "postedAtUtc": "2026-11-28T09:56:21.000Z",
+      "replyCount": 0,
+      "status": "maybe_available",
+      "officialUrl": "https://activity.doubao.com/ug/invite-share/M-DJWSDE",
+      "note": "官方邀请页 https://activity.doubao.com/ug/invite-share/M-DJWSDE",
+      "expires": "2026-11-30 17:22"
+    },
+    {
+      "code": "DJWSDE",
+      "postId": "2126616176365318269",
+      "author": "wsjbao",
+      "postUrl": "https://x.com/wsjbao/status/2126616176365318269",
+      "postedAt": "2026-11-28 17:56:21 北京时间",
+      "postedAtUtc": "2026-11-28T09:56:21.000Z",
+      "replyCount": 0,
+      "status": "maybe_available",
+      "expires": "2026-11-30 17:22"
+    },
     {
       "code": "X8MJ66",
       "postId": "2126602617266872514",
